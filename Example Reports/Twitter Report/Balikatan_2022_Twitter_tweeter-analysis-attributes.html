@@ -1,0 +1,353 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Analysis of Tweeter Attributes</title>
+<link rel='stylesheet' type='text/css' href='Balikatan_2022_Twitter-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Analysis of Tweeter Attributes</h1>
+<blockquote>
+<p>This section analyzes the measure and attributes values of three tweeter groups: Verified, Top Ranked, and News Agencies. Top Ranked nodes are high scoring nodes for both Super Spreaders and Super Friends.</p>
+<p><a href="Balikatan_2022_Twitter.html">Return to previous page</a></p>
+<h2>Continuous Attribute NUMBER_FOLLOWERS by Tweeter Group</h2>
+<blockquote>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Top Ranked</td>
+<td style='color:green'>10</td>
+<td style='color:green'>25</td>
+<td style='color:green'>264,663.200</td>
+<td style='color:green'>1,656,340</td>
+<td style='color:green'>477,829.986</td>
+</tr>
+<tr style='color:red'>
+<td style='color:red'>Verified</td>
+<td style='color:red'>118</td>
+<td style='color:red'>98</td>
+<td style='color:red'>495,898.051</td>
+<td style='color:red'>8,838,359</td>
+<td style='color:red'>1,309,627.461</td>
+</tr>
+<tr style='color:red'>
+<td style='color:red'>News Agencies</td>
+<td style='color:red'>14</td>
+<td style='color:red'>434</td>
+<td style='color:red'>2,444,747.786</td>
+<td style='color:red'>8,838,359</td>
+<td style='color:red'>2,467,368.040</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>1,347</td>
+<td>0</td>
+<td>45,641.690</td>
+<td>8,838,359</td>
+<td>412,104.862</td>
+</tr>
+</table>
+</blockquote>
+<h2>Continuous Attribute TWEET_COUNT by Tweeter Group</h2>
+<blockquote>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:red'>
+<td style='color:red'>Top Ranked</td>
+<td style='color:red'>10</td>
+<td style='color:red'>2</td>
+<td style='color:red'>19.200</td>
+<td style='color:red'>60</td>
+<td style='color:red'>18.798</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Verified</td>
+<td style='color:green'>118</td>
+<td style='color:green'>0</td>
+<td style='color:green'>2.958</td>
+<td style='color:green'>60</td>
+<td style='color:green'>6.769</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>News Agencies</td>
+<td style='color:green'>14</td>
+<td style='color:green'>0</td>
+<td style='color:green'>1.714</td>
+<td style='color:green'>7</td>
+<td style='color:green'>1.943</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>1,347</td>
+<td>0</td>
+<td>1.880</td>
+<td>60</td>
+<td>3.456</td>
+</tr>
+</table>
+</blockquote>
+<h2>Measure Super Spreaders by Tweeter Group</h2>
+<blockquote>
+<p>Input network(s): Agent x Agent - All Communication</p>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:red'>
+<td style='color:red'>Top Ranked</td>
+<td style='color:red'>10</td>
+<td style='color:red'>0.107</td>
+<td style='color:red'>0.420</td>
+<td style='color:red'>1</td>
+<td style='color:red'>0.273</td>
+</tr>
+<tr style='color:red'>
+<td style='color:red'>Verified</td>
+<td style='color:red'>118</td>
+<td style='color:red'>0</td>
+<td style='color:red'>0.078</td>
+<td style='color:red'>1</td>
+<td style='color:red'>0.151</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>News Agencies</td>
+<td style='color:green'>14</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.022</td>
+<td style='color:green'>0.112</td>
+<td style='color:green'>0.039</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>1,347</td>
+<td>0</td>
+<td>0.009</td>
+<td>1</td>
+<td>0.052</td>
+</tr>
+</table>
+</blockquote>
+<h2>Measure Super Friends by Tweeter Group</h2>
+<blockquote>
+<p>Input network(s): Agent x Agent - Reciprocal</p>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:red'>
+<td style='color:red'>Top Ranked</td>
+<td style='color:red'>10</td>
+<td style='color:red'>0.142</td>
+<td style='color:red'>0.439</td>
+<td style='color:red'>1</td>
+<td style='color:red'>0.222</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Verified</td>
+<td style='color:green'>118</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.049</td>
+<td style='color:green'>0.579</td>
+<td style='color:green'>0.116</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>News Agencies</td>
+<td style='color:green'>14</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.024</td>
+<td style='color:green'>0.238</td>
+<td style='color:green'>0.064</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>1,347</td>
+<td>0</td>
+<td>0.009</td>
+<td>1</td>
+<td>0.054</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attribute Component Members, Weak</h2>
+<blockquote>
+<table class='measures-ranked'>
+</table>
+<table>
+<col width='200px'/>
+<col width='500px'/>
+<thead>
+<tr>
+<th></th>
+<th>Most frequent attribute values</th>
+</tr>
+</thead>
+<tr>
+<th>Top Ranked</th>
+<td>2 (2), 0 (1)</td>
+</tr>
+<tr>
+<th>Verified</th>
+<td>0 (78), 1 (4), 2 (2), 6 (2), 9 (2), 26 (2), 81 (2), 4 (1), 7 (1), 8 (1)</td>
+</tr>
+<tr>
+<th>News Agencies</th>
+<td>0 (5), 26 (2), 2 (1), 5 (1), 35 (1), 47 (1), 81 (1), 82 (1), 112 (1)</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attribute Language</h2>
+<blockquote>
+<table class='measures-ranked'>
+</table>
+<table>
+<col width='200px'/>
+<col width='500px'/>
+<thead>
+<tr>
+<th></th>
+<th>Most frequent attribute values</th>
+</tr>
+</thead>
+<tr>
+<th>Top Ranked</th>
+<td>En (3)</td>
+</tr>
+<tr>
+<th>Verified</th>
+<td>En (106), Tl (3), Cs (2), Ja (1), In (1), Und (1), Zh (1), Th (1), Qme (1), Es (1)</td>
+</tr>
+<tr>
+<th>News Agencies</th>
+<td>En (10), Tl (4)</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p><a href="Balikatan_2022_Twitter.html">Return to previous page</a></p>
+</html>
