@@ -1,0 +1,949 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Analysis of Tweet Attributes</title>
+<link rel='stylesheet' type='text/css' href='Balikatan_2022_Twitter-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Analysis of Tweet Attributes</h1>
+<blockquote>
+<p>This section analyzes tweets by language group.</p>
+<p><a href="Balikatan_2022_Twitter.html">Return to previous page</a></p>
+<h2>Continuous Attribute Statistics</h2>
+<blockquote>
+<h3>General Statistics</h3>
+<p>This table shows statistics for the values of each continuous attribute. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr>
+<td>RETWEET_COUNT</td>
+<td>0</td>
+<td>62.071</td>
+<td>1,198</td>
+<td>65.393</td>
+</tr>
+</table>
+</blockquote>
+<h2>Continous Attribute RETWEET_COUNT by Language</h2>
+<blockquote>
+<p>This table contains statistics for the nodes in each language group for the attribute RETWEET_COUNT.</p>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Tl</td>
+<td style='color:green'>88</td>
+<td style='color:green'>0</td>
+<td style='color:green'>12.114</td>
+<td style='color:green'>200</td>
+<td style='color:green'>25.090</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>En</td>
+<td style='color:green'>2,184</td>
+<td style='color:green'>0</td>
+<td style='color:green'>66.124</td>
+<td style='color:green'>1,198</td>
+<td style='color:green'>66.212</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Zh</td>
+<td style='color:green'>6</td>
+<td style='color:green'>0</td>
+<td style='color:green'>28</td>
+<td style='color:green'>81</td>
+<td style='color:green'>37.483</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Und</td>
+<td style='color:green'>7</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.286</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.452</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Ja</td>
+<td style='color:green'>40</td>
+<td style='color:green'>0</td>
+<td style='color:green'>33.900</td>
+<td style='color:green'>171</td>
+<td style='color:green'>26.515</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>In</td>
+<td style='color:green'>13</td>
+<td style='color:green'>0</td>
+<td style='color:green'>8.231</td>
+<td style='color:green'>35</td>
+<td style='color:green'>8.276</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Pl</td>
+<td style='color:green'>4</td>
+<td style='color:green'>5</td>
+<td style='color:green'>5</td>
+<td style='color:green'>5</td>
+<td style='color:green'>0</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Qme</td>
+<td style='color:green'>7</td>
+<td style='color:green'>0</td>
+<td style='color:green'>4.143</td>
+<td style='color:green'>20</td>
+<td style='color:green'>6.512</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Th</td>
+<td style='color:green'>7</td>
+<td style='color:green'>0</td>
+<td style='color:green'>1.714</td>
+<td style='color:green'>4</td>
+<td style='color:green'>1.485</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Qht</td>
+<td style='color:green'>6</td>
+<td style='color:green'>0</td>
+<td style='color:green'>3.167</td>
+<td style='color:green'>8</td>
+<td style='color:green'>3.436</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Cs</td>
+<td style='color:green'>4</td>
+<td style='color:green'>4</td>
+<td style='color:green'>6.750</td>
+<td style='color:green'>15</td>
+<td style='color:green'>4.763</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>2,372</td>
+<td>0</td>
+<td>62.071</td>
+<td>1,198</td>
+<td>65.393</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x HAS_URL</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>No Value</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>38</td>
+<td>50</td>
+</tr>
+<tr>
+<th>En</th>
+<td>320</td>
+<td>1,864</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>2</td>
+<td>38</td>
+</tr>
+<tr>
+<th>In</th>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>2</td>
+<td>2</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x IS_IN_REPLY_TO</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>No Value</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>80</td>
+</tr>
+<tr>
+<th>En</th>
+<td>17</td>
+<td>13</td>
+<td>4</td>
+<td>1</td>
+<td>2,149</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>39</td>
+</tr>
+<tr>
+<th>In</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x IS_QUOTE</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<thead>
+<tr>
+<th></th>
+<th>3</th>
+<th>1</th>
+<th>2</th>
+<th>No Value</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>87</td>
+</tr>
+<tr>
+<th>En</th>
+<td>3</td>
+<td>27</td>
+<td>2</td>
+<td>2,152</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>38</td>
+</tr>
+<tr>
+<th>In</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x IS_REPLY</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>No Value</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>79</td>
+</tr>
+<tr>
+<th>En</th>
+<td>32</td>
+<td>10</td>
+<td>2</td>
+<td>2,140</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>40</td>
+</tr>
+<tr>
+<th>In</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x IS_RETWEET</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+<col width='150px'/>
+<col width='150px'/>
+<col width='150px'/>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>No Value</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>53</td>
+<td>35</td>
+</tr>
+<tr>
+<th>En</th>
+<td>1,931</td>
+<td>253</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>36</td>
+<td>4</td>
+</tr>
+<tr>
+<th>In</th>
+<td>9</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>2</td>
+<td>2</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x Location</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+</table>
+<table>
+<col width='200px'/>
+<col width='500px'/>
+<thead>
+<tr>
+<th></th>
+<th>Most frequent attribute values</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>No Value (41), Republic of the Philippines (8), Metro Manila (3), Philippines (2), Manila (2), Quezon City (2), UP Baguio (2), Makati City (2), Hst (2), National Capital Region (1)</td>
+</tr>
+<tr>
+<th>En</th>
+<td>No Value (843), Camp Smith, Hawaii (44), JAPAN (35), United States (30), Metro Manila (26), Quezon City (26), Philippines (24), Petaling Jaya, Malaysia (24), Ɨ�本　神奈川　横須賀 (22), Manila, Philippines (20)</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>Halawa, HI (1), USA (1), ŏ�湾。タイワン、中: 台灣 (1), NFSC, Himalaya Washington DC (1), Himalaya Australia (1), No Value (1)</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>ɇ�沢 Kanazawa (4), Montenegro (1), Okinawa, Japan (1), No Value (1)</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>No Value (12), Japan (3), Ɨ�本 (2), ǥ�奈川県 (2), Halawa, HI (1), JAPAN (1), Ɲ�京都港区赤坂1-10-5 (1), Ť�阪府寝屋川市 (1), Planet Korin (1), Ɨ�本   　好きな国  と (1)</td>
+</tr>
+<tr>
+<th>In</th>
+<td>Halawa, HI (2), Jakarta, Indonesia (2), No Value (2), Petaling Jaya, Malaysia (1), 2335 Roxas Boulevard, Manila (1), Xxx (1), Bali  Island (GMT+8) (1), Jakarta Pusat (1), Ibu Kota (1), Indonesia (1)</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>Kraków (1), Łódź, Polska (1), Warsaw, Poland (1), Polska (1)</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>Ɨ�本 (2), No Value (2), Republic of the Philippines (1), Uplb | babaylan | JOIN LFS! (1), Aurora, CO (1)</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>Los Angeles, CA (1), Yonaguni-cho, Okinawa (1)</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>Halawa, HI (1)</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>Halawa, HI (1)</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>No Value (4), Halawa, HI (1), Bangkok, Thailand (1), ���ักรวรรดิสยาม (Siamese Empire) (1)</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>First Island Chain (1)</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>Vancouver, British Columbia (3), Metro Manila (1), Offutt Air Force Base (1), Colombia (1)</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>California, USA (1)</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>Tržiště 15, Prague 1, 118 01 (2), Praha, Česká republika (1), No Value (1)</td>
+</tr>
+</table>
+</blockquote>
+<h2>Categorical Attributes: Language x Source</h2>
+<blockquote>
+<p>This table shows the joint frequency of the language group for each attribute value, or for the most frequent attribute values when there are many values.</p>
+<table class='measures-ranked'>
+</table>
+<table>
+<col width='200px'/>
+<col width='500px'/>
+<thead>
+<tr>
+<th></th>
+<th>Most frequent attribute values</th>
+</tr>
+</thead>
+<tr>
+<th>Tl</th>
+<td>Twitter for Android (41), Twitter Web App (23), Twitter for iPhone (11), TweetDeck (9), Jetpack.com (1), Twitter for iPad (1), Twitter for Mac (1), Echobox (1)</td>
+</tr>
+<tr>
+<th>En</th>
+<td>Twitter for Android (817), Twitter Web App (648), Twitter for iPhone (550), Twitter for iPad (61), TweetDeck (54), Sprinklr Publishing (21), Hootsuite Inc. (12), Tweetbot for Mac (7), Sprinklr (2), Tweetbot for iΟS (2)</td>
+</tr>
+<tr>
+<th>Zh</th>
+<td>Twitter Web App (2), Twitter for Android (1), Twitter for iPhone (1), Hootsuite Inc. (1), Twitter for iPad (1)</td>
+</tr>
+<tr>
+<th>Und</th>
+<td>Twitter for iPad (4), Twitter for Android (2), Twitter for iPhone (1)</td>
+</tr>
+<tr>
+<th>Ja</th>
+<td>Twitter Web App (14), Twitter for iPhone (13), Twitter for Android (9), Hootsuite Inc. (1), Twitter for iPad (1), Janetter Pro for iPhone (1), Oreno Intelligence Agency (1)</td>
+</tr>
+<tr>
+<th>In</th>
+<td>Twitter for Android (6), Twitter for iPhone (3), Twitter Web App (2), Hootsuite Inc. (2)</td>
+</tr>
+<tr>
+<th>Pl</th>
+<td>Twitter Web App (4)</td>
+</tr>
+<tr>
+<th>Qme</th>
+<td>Twitter for iPhone (5), Twitter Web App (2)</td>
+</tr>
+<tr>
+<th>Es</th>
+<td>Twitter for Android (1), Twitter Web App (1)</td>
+</tr>
+<tr>
+<th>Vi</th>
+<td>Hootsuite Inc. (1)</td>
+</tr>
+<tr>
+<th>Ko</th>
+<td>Hootsuite Inc. (1)</td>
+</tr>
+<tr>
+<th>Th</th>
+<td>Twitter Web App (5), Hootsuite Inc. (1), Twitter for iPad (1)</td>
+</tr>
+<tr>
+<th>Fr</th>
+<td>Twitter Web App (1)</td>
+</tr>
+<tr>
+<th>Qht</th>
+<td>Twitter for iPhone (3), Twitter Web App (2), Twitter for Android (1)</td>
+</tr>
+<tr>
+<th>Zxx</th>
+<td>Twitter Web App (1)</td>
+</tr>
+<tr>
+<th>Cs</th>
+<td>Twitter for iPhone (3), Twitter Web App (1)</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p><a href="Balikatan_2022_Twitter.html">Return to previous page</a></p>
+</html>
