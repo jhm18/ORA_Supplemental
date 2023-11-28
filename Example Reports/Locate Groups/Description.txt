@@ -1,0 +1,1 @@
+This directory contains the Locate Groups Report featured in "Social Media Event Analysis: A Pocket Guide."
