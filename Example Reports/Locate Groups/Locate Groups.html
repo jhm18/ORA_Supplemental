@@ -1,0 +1,2349 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>LOCATE GROUPS REPORT</title>
+<link rel='stylesheet' type='text/css' href='Locate Groups-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>LOCATE GROUPS REPORT</h1>
+<blockquote>
+<p>Input data: Balikatan_2022_Reduced</p>
+<p>Start time: Tue Nov 28 16:02:09 2023
+</p>
+<p><a href="Locate Groups_network-data-description.html">Data Description</a></p>
+</blockquote>
+<blockquote>
+<h2>Parameters</h2>
+<blockquote>
+<table>
+<col width='300px'/>
+<col width='500px'/>
+<tr>
+<td>Groups contain nodes from nodesets:</td>
+<td>Hashtag, Word</td>
+</tr>
+<tr>
+<td>Networks used to calculate groups:</td>
+<td>Hashtag x Hashtag - Co-Occurrence, Hashtag x Word, Word x Word - Co-Occurrence</td>
+</tr>
+<tr>
+<td>Transformations applied:</td>
+<td>None</td>
+</tr>
+</table>
+</blockquote>
+<h2>Leiden Method Clustering Algorithm</h2>
+<blockquote>
+<h3>Input data</h3>
+<table>
+<col width='300px'/>
+<col width='500px'/>
+<tr>
+<td>Networks:</td>
+<td>Hashtag x Hashtag - Co-Occurrence, Hashtag x Word, Word x Word - Co-Occurrence</td>
+</tr>
+<tr>
+<td>Global clustering coefficient (transitivity)</td>
+<td>0.410</td>
+</tr>
+</table>
+<p>The Leiden algorithm requires a symmetric network, and therefore the input network was symmetrized using the union method.</p>
+<p>Random seed used in the algorithm: 0</p>
+<h3>Group Quality Metrics</h3>
+<table>
+<col width='200px'/>
+<col width='100px'/>
+<col width='400px'/>
+<tr>
+<td>Newman Modularity</td>
+<td>0.612</td>
+<td>Higher values indicate a better clustering (i.e. more community structure).</td>
+</tr>
+</table>
+<h3>Group Membership</h3>
+<p>Groups are composed of nodes from these nodesets: Hashtag, Word</p>
+<p>There are more than 500 nodes and so the nodes in each group will not be listed. Use the CSV output to get a list of nodes in each group.</p>
+<h3>Group Size Statistics</h3>
+<table>
+<col width='300px'/>
+<col width='60px'/>
+<tr>
+<td>Number of groups</td>
+<td>19</td>
+</tr>
+<tr>
+<td>Number of isolate groups</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Number of dyad groups</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Number of triad groups</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Largest group</td>
+<td>440</td>
+</tr>
+</table>
+<h3>Larger Group Statistics</h3>
+<p>This shows size statistics for groups with more than 3 nodes.</p>
+<table>
+<col width='300px'/>
+<col width='60px'/>
+<tr>
+<td>Number of larger groups</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Minimum size</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Maximum size</td>
+<td>440</td>
+</tr>
+<tr>
+<td>Average size</td>
+<td>121</td>
+</tr>
+<tr>
+<td>Std.dev size</td>
+<td>127</td>
+</tr>
+
+</table>
+<h3>Group Sub-Network Measures</h3>
+<p>This section computes and displays information about the largest 100 groups (with at least 3 nodes). Measure calculations are performed on the sub-network defined by the group, e.g. the group member nodes and the links between them. The internal link count is the number of links that connect one group node to another group node. The external link count is the number of links that connect a group node to a non-group node. The External/Internal index ranges between -1 (all links are internal and the group is perfectly silo'd) to +1 (all links are external); a score of 0 means an equal number of internal and external links. The Cheeger value is the ratio of the group's external link count to its size. The approximate Cheeger value for the graph is the minimum value across all sub-groups.</p>
+<p>Cheeger value is 0</p>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='120px'/>
+<col width='120px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th title='The name of the group.'>Group</th>
+<th>Hashtag</th>
+<th>Word</th>
+<th title='The density of the input network using only the group nodes.'>Density</th>
+<th title='The minimum link value for the links that connect group nodes.'>Min link value</th>
+<th title='The maximum link value for the links that connect group nodes.'>Max link value</th>
+<th title='The number of links between group nodes.'>Internal links</th>
+<th title='The number of links between a group node and a non-group node.'>External links</th>
+<th title='The ratio of the group internal link count to the sum of its internal and external link count.'>Percent inner links</th>
+<th title='The degree to which the group links are all internal (-1) or all external (+1)'>E/I Index</th>
+<th>Cheeger value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td>34</td>
+<td>406</td>
+<td>0.057</td>
+<td>1</td>
+<td>396</td>
+<td>10,183</td>
+<td>12,629</td>
+<td>44.64%</td>
+<td>0.107</td>
+<td>28.702</td>
+</tr>
+<tr>
+<td>2</td>
+<td>37</td>
+<td>360</td>
+<td>0.063</td>
+<td>1</td>
+<td>30</td>
+<td>9,085</td>
+<td>7,928</td>
+<td>53.40%</td>
+<td>-0.068</td>
+<td>19.970</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13</td>
+<td>257</td>
+<td>0.095</td>
+<td>1</td>
+<td>29</td>
+<td>6,584</td>
+<td>3,231</td>
+<td>67.08%</td>
+<td>-0.342</td>
+<td>11.967</td>
+</tr>
+<tr>
+<td>4</td>
+<td>21</td>
+<td>172</td>
+<td>0.134</td>
+<td>1</td>
+<td>615</td>
+<td>4,475</td>
+<td>7,306</td>
+<td>37.98%</td>
+<td>0.240</td>
+<td>37.855</td>
+</tr>
+<tr>
+<td>5</td>
+<td>30</td>
+<td>159</td>
+<td>0.404</td>
+<td>1</td>
+<td>100</td>
+<td>12,418</td>
+<td>5,120</td>
+<td>70.81%</td>
+<td>-0.416</td>
+<td>27.090</td>
+</tr>
+<tr>
+<td>6</td>
+<td>5</td>
+<td>137</td>
+<td>0.180</td>
+<td>1</td>
+<td>76</td>
+<td>3,484</td>
+<td>5,970</td>
+<td>36.85%</td>
+<td>0.263</td>
+<td>42.042</td>
+</tr>
+<tr>
+<td>7</td>
+<td>30</td>
+<td>72</td>
+<td>0.301</td>
+<td>2</td>
+<td>49</td>
+<td>2,453</td>
+<td>2,840</td>
+<td>46.34%</td>
+<td>0.073</td>
+<td>27.843</td>
+</tr>
+<tr>
+<td>8</td>
+<td>16</td>
+<td>80</td>
+<td>0.198</td>
+<td>1</td>
+<td>60</td>
+<td>1,554</td>
+<td>3,385</td>
+<td>31.46%</td>
+<td>0.371</td>
+<td>35.260</td>
+</tr>
+<tr>
+<td>9</td>
+<td>14</td>
+<td>76</td>
+<td>0.195</td>
+<td>1</td>
+<td>98</td>
+<td>1,357</td>
+<td>3,056</td>
+<td>30.75%</td>
+<td>0.385</td>
+<td>33.956</td>
+</tr>
+<tr>
+<td>10</td>
+<td>5</td>
+<td>83</td>
+<td>0.159</td>
+<td>1</td>
+<td>179</td>
+<td>1,148</td>
+<td>4,477</td>
+<td>20.41%</td>
+<td>0.592</td>
+<td>50.875</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2</td>
+<td>56</td>
+<td>0.278</td>
+<td>2</td>
+<td>45</td>
+<td>889</td>
+<td>1,659</td>
+<td>34.89%</td>
+<td>0.302</td>
+<td>28.603</td>
+</tr>
+<tr>
+<td>12</td>
+<td>23</td>
+<td>26</td>
+<td>0.392</td>
+<td>2</td>
+<td>142</td>
+<td>687</td>
+<td>2,270</td>
+<td>23.23%</td>
+<td>0.535</td>
+<td>46.327</td>
+</tr>
+<tr>
+<td>13</td>
+<td>22</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>508</td>
+<td>52</td>
+<td>90.71%</td>
+<td>-0.814</td>
+<td>2.167</td>
+</tr>
+<tr>
+<td>14</td>
+<td>0</td>
+<td>17</td>
+<td>0.846</td>
+<td>4</td>
+<td>4</td>
+<td>230</td>
+<td>20</td>
+<td>92%</td>
+<td>-0.840</td>
+<td>1.176</td>
+</tr>
+<tr>
+<td>15</td>
+<td>0</td>
+<td>17</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>272</td>
+<td>17</td>
+<td>94.12%</td>
+<td>-0.882</td>
+<td>1</td>
+</tr>
+<tr>
+<td>16</td>
+<td>0</td>
+<td>10</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>90</td>
+<td>20</td>
+<td>81.82%</td>
+<td>-0.636</td>
+<td>2</td>
+</tr>
+<tr>
+<td>17</td>
+<td>0</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>56</td>
+<td>0</td>
+<td>100%</td>
+<td>-1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>12</td>
+<td>0</td>
+<td>100%</td>
+<td>-1</td>
+<td>0</td>
+</tr>
+
+</table>
+<h3>Group E/I Statistics</h3>
+<p>Groups are composed of nodes from these nodesets: Hashtag, Word</p>
+<p>This table shows for the largest groups the number of nodes that only have links to nodes of the same group (internal nodes), and the number of nodes that link to nodes outside the group (external nodes). In addition, the distribution of the number of external links for the group is displayed.</p>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='50px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th title='The name of the group.'>Group</th>
+<th title='The number of nodes in the group.'>Size</th>
+<th title='Number of group nodes that link only to other nodes in the group.'>Internal node count</th>
+<th title='Number of group nodes that have at least one link to a node outside the group.'>External node count</th>
+<th title='Minimum number of external links per group node.'>Min external link count</th>
+<th title='Average number of external links per group node.'>Mean external link count</th>
+<th title='Maximum number of external links per group node.'>Max external link count</th>
+<th title='Std.dev of the number of external links per group node.'>Stddev external link count</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td>440</td>
+<td>37</td>
+<td>403</td>
+<td>1</td>
+<td>31.337</td>
+<td>643</td>
+<td>69.505</td>
+</tr>
+<tr>
+<td>2</td>
+<td>397</td>
+<td>0</td>
+<td>397</td>
+<td>1</td>
+<td>19.970</td>
+<td>233</td>
+<td>22.439</td>
+</tr>
+<tr>
+<td>3</td>
+<td>270</td>
+<td>27</td>
+<td>243</td>
+<td>1</td>
+<td>13.296</td>
+<td>137</td>
+<td>18.831</td>
+</tr>
+<tr>
+<td>4</td>
+<td>193</td>
+<td>29</td>
+<td>164</td>
+<td>1</td>
+<td>44.549</td>
+<td>805</td>
+<td>92.560</td>
+</tr>
+<tr>
+<td>5</td>
+<td>189</td>
+<td>0</td>
+<td>189</td>
+<td>1</td>
+<td>27.090</td>
+<td>363</td>
+<td>47.321</td>
+</tr>
+<tr>
+<td>6</td>
+<td>142</td>
+<td>0</td>
+<td>142</td>
+<td>1</td>
+<td>42.042</td>
+<td>749</td>
+<td>82.643</td>
+</tr>
+<tr>
+<td>7</td>
+<td>102</td>
+<td>0</td>
+<td>102</td>
+<td>4</td>
+<td>27.843</td>
+<td>300</td>
+<td>48.574</td>
+</tr>
+<tr>
+<td>8</td>
+<td>96</td>
+<td>0</td>
+<td>96</td>
+<td>1</td>
+<td>35.260</td>
+<td>321</td>
+<td>54.387</td>
+</tr>
+<tr>
+<td>9</td>
+<td>90</td>
+<td>0</td>
+<td>90</td>
+<td>4</td>
+<td>33.956</td>
+<td>473</td>
+<td>70.155</td>
+</tr>
+<tr>
+<td>10</td>
+<td>88</td>
+<td>15</td>
+<td>73</td>
+<td>4</td>
+<td>61.329</td>
+<td>625</td>
+<td>120.854</td>
+</tr>
+</table>
+<h3>Group nodes with highest Internal degree</h3>
+<p>Groups are composed of nodes from these nodesets: Hashtag, Word</p>
+<p>The analysis below calculates for each group node its total degree (ignoring link values) using only links to/from nodes in its own group (internal links).</p>
+<table class='measures-ranked'>
+<col width='50px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Group-1</th>
+<th>value</th>
+<th>Group-2</th>
+<th>value</th>
+<th>Group-3</th>
+<th>value</th>
+<th>Group-4</th>
+<th>value</th>
+<th>Group-5</th>
+<th>value</th>
+<th>Group-6</th>
+<th>value</th>
+<th>Group-7</th>
+<th>value</th>
+<th>Group-8</th>
+<th>value</th>
+<th>Group-9</th>
+<th>value</th>
+<th>Group-10</th>
+<th>value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td>PacificOcean</td>
+<td>671</td>
+<td>shima</td>
+<td>229</td>
+<td>Marines</td>
+<td>370</td>
+<td>dams</td>
+<td>229</td>
+<td>address</td>
+<td>298</td>
+<td>インド太平洋</td>
+<td>146</td>
+<td>SuperBalitaSaTanghali</td>
+<td>131</td>
+<td>rivers</td>
+<td>86</td>
+<td>Assurance</td>
+<td>136</td>
+<td>China</td>
+<td>96</td>
+</tr>
+<tr>
+<td>2</td>
+<td>VFA22</td>
+<td>578</td>
+<td>日米友好</td>
+<td>203</td>
+<td>co</td>
+<td>218</td>
+<td>egg</td>
+<td>172</td>
+<td>including</td>
+<td>296</td>
+<td>visit</td>
+<td>126</td>
+<td>DailyTribune</td>
+<td>112</td>
+<td>rotonda</td>
+<td>68</td>
+<td>armored</td>
+<td>104</td>
+<td>和布林肯国务卿一起，参加精彩的美-印</td>
+<td>78</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MonitorASEAN</td>
+<td>460</td>
+<td>Deployment</td>
+<td>203</td>
+<td>makabayang</td>
+<td>179</td>
+<td>circle</td>
+<td>164</td>
+<td>mh-60s</td>
+<td>278</td>
+<td>zajedno</td>
+<td>126</td>
+<td>BLOCKBYBLOCK</td>
+<td>100</td>
+<td>napakalaking</td>
+<td>68</td>
+<td>dollars</td>
+<td>100</td>
+<td>Stronger_Together</td>
+<td>68</td>
+</tr>
+<tr>
+<td>4</td>
+<td>コープノース２２</td>
+<td>454</td>
+<td>NobleDefender</td>
+<td>201</td>
+<td>chain</td>
+<td>147</td>
+<td>whole-day</td>
+<td>161</td>
+<td>lulashnyk</td>
+<td>266</td>
+<td>pleased</td>
+<td>120</td>
+<td>US</td>
+<td>95</td>
+<td>GoogleAlerts</td>
+<td>57</td>
+<td>theatersustainment</td>
+<td>51</td>
+<td>logistical</td>
+<td>62</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DefenseNews</td>
+<td>305</td>
+<td>cordillera</td>
+<td>159</td>
+<td>eyes</td>
+<td>147</td>
+<td>PatriotMissileSystem</td>
+<td>156</td>
+<td>partnerships</td>
+<td>251</td>
+<td>manila</td>
+<td>115</td>
+<td>approves</td>
+<td>92</td>
+<td>dancingInTheAirCherryblossom</td>
+<td>56</td>
+<td>talks</td>
+<td>41</td>
+<td>NorthernViking22</td>
+<td>55</td>
+</tr>
+<tr>
+<td>6</td>
+<td>AFPyoucanTRUST</td>
+<td>285</td>
+<td>JSKongō</td>
+<td>147</td>
+<td>minister</td>
+<td>145</td>
+<td>Balikatan</td>
+<td>152</td>
+<td>operating</td>
+<td>248</td>
+<td>improve</td>
+<td>115</td>
+<td>ClawsUp</td>
+<td>77</td>
+<td>cpl</td>
+<td>55</td>
+<td>LetOurRiversFlowFree</td>
+<td>36</td>
+<td>patriot</td>
+<td>49</td>
+</tr>
+<tr>
+<td>7</td>
+<td>record-size</td>
+<td>271</td>
+<td>biag</td>
+<td>140</td>
+<td>vessels</td>
+<td>139</td>
+<td>AFP</td>
+<td>143</td>
+<td>hawk</td>
+<td>248</td>
+<td>suk-yeol</td>
+<td>112</td>
+<td>SEALs</td>
+<td>77</td>
+<td>CatLovers</td>
+<td>52</td>
+<td>weapons</td>
+<td>36</td>
+<td>JunkVFAEDCA</td>
+<td>46</td>
+</tr>
+<tr>
+<td>8</td>
+<td>est</td>
+<td>238</td>
+<td>ternate</td>
+<td>132</td>
+<td>brigade</td>
+<td>135</td>
+<td>quezon</td>
+<td>127</td>
+<td>459th</td>
+<td>233</td>
+<td>president-elect</td>
+<td>110</td>
+<td>24th</td>
+<td>74</td>
+<td>paintingThePresent</td>
+<td>51</td>
+<td>leni-kiko</td>
+<td>36</td>
+<td>happy</td>
+<td>44</td>
+</tr>
+<tr>
+<td>9</td>
+<td>pm</td>
+<td>228</td>
+<td>JSInazuma</td>
+<td>130</td>
+<td>tactical</td>
+<td>134</td>
+<td>visible</td>
+<td>117</td>
+<td>participate</td>
+<td>233</td>
+<td>yoon</td>
+<td>110</td>
+<td>$2</td>
+<td>73</td>
+<td>ating</td>
+<td>51</td>
+<td>josue</td>
+<td>36</td>
+<td>collaboration</td>
+<td>43</td>
+</tr>
+<tr>
+<td>10</td>
+<td>specialeurasia</td>
+<td>203</td>
+<td>coming</td>
+<td>129</td>
+<td>emilio</td>
+<td>133</td>
+<td>attribute</td>
+<td>102</td>
+<td>NoToApayaoDams</td>
+<td>229</td>
+<td>defenders</td>
+<td>109</td>
+<td>diverse</td>
+<td>70</td>
+<td>pampang</td>
+<td>50</td>
+<td>marquez</td>
+<td>36</td>
+<td>relationships</td>
+<td>40</td>
+</tr>
+</table>
+<h3>Group nodes with the highest E/I Index</h3>
+<p>Groups are composed of nodes from these nodesets: Hashtag, Word</p>
+<p>The analysis below calculates for each group node its External/Internal index, which ranges between -1 (all links are internal and the group is perfectly silo'd) to +1 (all links are external); a score of 0 means an equal number of internal and external links.</p>
+<table class='measures-ranked'>
+<col width='50px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Group-1</th>
+<th>value</th>
+<th>Group-2</th>
+<th>value</th>
+<th>Group-3</th>
+<th>value</th>
+<th>Group-4</th>
+<th>value</th>
+<th>Group-5</th>
+<th>value</th>
+<th>Group-6</th>
+<th>value</th>
+<th>Group-7</th>
+<th>value</th>
+<th>Group-8</th>
+<th>value</th>
+<th>Group-9</th>
+<th>value</th>
+<th>Group-10</th>
+<th>value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td>training</td>
+<td>0.620</td>
+<td>LittorallyAwesome</td>
+<td>0.755</td>
+<td>projects</td>
+<td>0.458</td>
+<td>JusticeForJenniferLaude</td>
+<td>0.744</td>
+<td>37th</td>
+<td>0.530</td>
+<td>Readiness</td>
+<td>0.866</td>
+<td>USMC</td>
+<td>0.644</td>
+<td>pwersang</td>
+<td>0.834</td>
+<td>progressive</td>
+<td>0.704</td>
+<td>JunkVFAEDCA</td>
+<td>0.852</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tokyo</td>
+<td>0.619</td>
+<td>arctic</td>
+<td>0.461</td>
+<td>i’m</td>
+<td>0.389</td>
+<td>boat</td>
+<td>0.649</td>
+<td>IPDF</td>
+<td>0.429</td>
+<td>NavyPartnerships</td>
+<td>0.735</td>
+<td>TNIADMengabdiDanMembangunBersamaRakyat</td>
+<td>0.613</td>
+<td>cpl</td>
+<td>0.662</td>
+<td>theatersustainment</td>
+<td>0.696</td>
+<td>JoinAnakbayan</td>
+<td>0.830</td>
+</tr>
+<tr>
+<td>3</td>
+<td>global</td>
+<td>0.590</td>
+<td>Partners</td>
+<td>0.379</td>
+<td>job</td>
+<td>0.365</td>
+<td>congrats</td>
+<td>0.643</td>
+<td>36</td>
+<td>0.348</td>
+<td>meetings</td>
+<td>0.704</td>
+<td>theprideandtradition</td>
+<td>0.466</td>
+<td>bantayog</td>
+<td>0.633</td>
+<td>hypersonic</td>
+<td>0.643</td>
+<td>和布林肯国务卿一起，参加精彩的美-印</td>
+<td>0.778</td>
+</tr>
+<tr>
+<td>4</td>
+<td>usarpac</td>
+<td>0.457</td>
+<td>missiles</td>
+<td>0.347</td>
+<td>tackle</td>
+<td>0.351</td>
+<td>bay</td>
+<td>0.632</td>
+<td>InTheRegion</td>
+<td>0.292</td>
+<td>prethodne</td>
+<td>0.509</td>
+<td>JunkEDCA</td>
+<td>0.459</td>
+<td>april</td>
+<td>0.619</td>
+<td>prior</td>
+<td>0.638</td>
+<td>usn</td>
+<td>0.775</td>
+</tr>
+<tr>
+<td>5</td>
+<td>wheeled</td>
+<td>0.449</td>
+<td>school</td>
+<td>0.273</td>
+<td>change</td>
+<td>0.351</td>
+<td>boulevard</td>
+<td>0.623</td>
+<td>tens</td>
+<td>0.190</td>
+<td>iz</td>
+<td>0.492</td>
+<td>democracy</td>
+<td>0.356</td>
+<td>hard</td>
+<td>0.615</td>
+<td>Assurance</td>
+<td>0.553</td>
+<td>st_</td>
+<td>0.755</td>
+</tr>
+<tr>
+<td>6</td>
+<td>กองทัพบกไทยจัดพิธีรับมอบยานเกราะล้อยาง</td>
+<td>0.410</td>
+<td>안보</td>
+<td>0.261</td>
+<td>1/2</td>
+<td>0.351</td>
+<td>印太平洋</td>
+<td>0.585</td>
+<td>promoting</td>
+<td>0.172</td>
+<td>photos</td>
+<td>0.488</td>
+<td>部长级会议。</td>
+<td>0.333</td>
+<td>natapos</td>
+<td>0.525</td>
+<td>1961–1963</td>
+<td>0.496</td>
+<td>happy</td>
+<td>0.733</td>
+</tr>
+<tr>
+<td>7</td>
+<td>nestor</td>
+<td>0.355</td>
+<td>updates</td>
+<td>0.240</td>
+<td>deployment</td>
+<td>0.351</td>
+<td>dams</td>
+<td>0.557</td>
+<td>BRAHMOS</td>
+<td>0.122</td>
+<td>stratofortress</td>
+<td>0.423</td>
+<td>takeoff</td>
+<td>0.253</td>
+<td>hihigpit</td>
+<td>0.443</td>
+<td>dollars</td>
+<td>0.459</td>
+<td>fosse</td>
+<td>0.706</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Soldiers</td>
+<td>0.335</td>
+<td>detect</td>
+<td>0.222</td>
+<td>essential</td>
+<td>0.333</td>
+<td>diget</td>
+<td>0.496</td>
+<td>arms</td>
+<td>0.094</td>
+<td>mayo</td>
+<td>0.418</td>
+<td>tongvaland</td>
+<td>0.240</td>
+<td>kevin</td>
+<td>0.417</td>
+<td>armored</td>
+<td>0.435</td>
+<td>China</td>
+<td>0.644</td>
+</tr>
+<tr>
+<td>9</td>
+<td>demolition</td>
+<td>0.282</td>
+<td>araw</td>
+<td>0.217</td>
+<td>resupply</td>
+<td>0.244</td>
+<td>heart</td>
+<td>0.459</td>
+<td>➡️trudnościach</td>
+<td>0.034</td>
+<td>modernization</td>
+<td>0.391</td>
+<td>trudeau</td>
+<td>0.196</td>
+<td>rotonda</td>
+<td>0.385</td>
+<td>lupang</td>
+<td>0.383</td>
+<td>assault</td>
+<td>0.593</td>
+</tr>
+<tr>
+<td>10</td>
+<td>network</td>
+<td>0.263</td>
+<td>USINDOPACOM</td>
+<td>0.215</td>
+<td>ph-us</td>
+<td>0.182</td>
+<td>USA</td>
+<td>0.458</td>
+<td>security</td>
+<td>0.018</td>
+<td>インド太平洋</td>
+<td>0.383</td>
+<td>politics</td>
+<td>0.180</td>
+<td>GoogleAlerts</td>
+<td>0.370</td>
+<td>weapons</td>
+<td>0.357</td>
+<td>law</td>
+<td>0.560</td>
+</tr>
+</table>
+<h3>Group Hubs (largest modularity vitality)</h3>
+<p>Modularity Vitality measures the change in the cluster quality (measured by modularity) when a single node is removed. A positive score indicates that the node acts as a hub within its group by contributing to its community structure.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p></p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='80px'/>
+<col width='300px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Row nodes</th>
+<th>Value</th>
+<th>Nodeset</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>aming</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>hinahamon</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>condemn</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>ligtning</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>magsilbi</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>organisasyon</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>tumatakbo</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>kandidatong</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>Bombers</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Hashtag</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>eleksyong</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>SeniorLeadersSeminar2022</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Hashtag</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>national</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>service</td>
+<td style='color:red'>0.001</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>parachute</td>
+<td style='color:red'>9.384e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>17</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>activity</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>bayani</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>campaign</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>details</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>exponentially</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>follow</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>fund</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>info</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>media</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>mga</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>ng</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>official</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>posted</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>proceeds</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>register</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>social</td>
+<td style='color:red'>7.480e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:red'>share</td>
+<td style='color:red'>7.329e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:red'>BLOCKBYBLOCK</td>
+<td style='color:red'>7.262e-04</td>
+<td style='color:red'>Hashtag</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:red'>deserving</td>
+<td style='color:red'>6.972e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:red'>commander</td>
+<td style='color:red'>6.924e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:red'>NavalPartnerships</td>
+<td style='color:red'>6.922e-04</td>
+<td style='color:red'>Hashtag</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:red'>ways</td>
+<td style='color:red'>6.838e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:red'>explore</td>
+<td style='color:red'>6.798e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:red'>including</td>
+<td style='color:red'>6.640e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:red'>mh-60s</td>
+<td style='color:red'>6.580e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:red'>lulashnyk</td>
+<td style='color:red'>6.564e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:red'>rivers</td>
+<td style='color:red'>6.378e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:red'>resettlement</td>
+<td style='color:red'>6.354e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:red'>visit</td>
+<td style='color:red'>6.115e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:red'>zajedno</td>
+<td style='color:red'>6.107e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:red'>24</td>
+<td style='color:red'>6.071e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:red'>remain</td>
+<td style='color:red'>5.966e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:red'>hawk</td>
+<td style='color:red'>5.957e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:red'>saipan</td>
+<td style='color:red'>5.905e-04</td>
+<td style='color:red'>Word</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:green'>knights”</td>
+<td style='color:green'>5.855e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:green'>“island</td>
+<td style='color:green'>5.855e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:green'>address</td>
+<td style='color:green'>5.845e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:green'>enhancing</td>
+<td style='color:green'>5.794e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:green'>integration</td>
+<td style='color:green'>5.794e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:green'>relationships</td>
+<td style='color:green'>5.695e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:green'>sherman</td>
+<td style='color:green'>5.594e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:green'>risk</td>
+<td style='color:green'>5.521e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:green'>brian</td>
+<td style='color:green'>5.516e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:green'>brig</td>
+<td style='color:green'>5.516e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:green'>wolford</td>
+<td style='color:green'>5.516e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:green'>analizirali</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:green'>domaćini</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:green'>events</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:green'>kolegama</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:green'>month</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:green'>montreal</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:green'>sajber</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:green'>sedmice</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:green'>sposobnosti</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:green'>su</td>
+<td style='color:green'>5.457e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:green'>ernesto</td>
+<td style='color:green'>5.350e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:green'>live-fire</td>
+<td style='color:green'>5.231e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:green'>wysłannika</td>
+<td style='color:green'>5.231e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:green'>➡️ćwiczeniach</td>
+<td style='color:green'>5.231e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:green'>powerful</td>
+<td style='color:green'>5.156e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:green'>SOF</td>
+<td style='color:green'>5.100e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:green'>abraham</td>
+<td style='color:green'>5.047e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:green'>routine</td>
+<td style='color:green'>5.047e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:green'>south</td>
+<td style='color:green'>5.047e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:green'>strike</td>
+<td style='color:green'>5.047e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:green'>lincoln</td>
+<td style='color:green'>5.043e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:green'>attached</td>
+<td style='color:green'>4.969e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:green'>late</td>
+<td style='color:green'>4.945e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:green'>72</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:green'>b-roll</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:green'>calfex</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:green'>conducts</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:green'>cvn</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:green'>deploys</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:green'>flying</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:green'>high</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:green'>video</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:green'>✈️</td>
+<td style='color:green'>4.803e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:green'>pleased</td>
+<td style='color:green'>4.758e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:green'>NoToApayaoDams</td>
+<td style='color:green'>4.757e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:green'>globe</td>
+<td style='color:green'>4.754e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:green'>Marines</td>
+<td style='color:green'>4.716e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:green'>approves</td>
+<td style='color:green'>4.689e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:green'>Security</td>
+<td style='color:green'>4.664e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:green'>persons</td>
+<td style='color:green'>4.664e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>-0.020</td>
+<td>Mean:</td>
+<td>1.809e-06</td>
+<td>Lower quartile:</td>
+<td>-5.761e-06</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>0.001</td>
+<td>Std.dev:</td>
+<td>5.848e-04</td>
+<td>Median:</td>
+<td>9.761e-06</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>6.099e-05</td>
+</tr>
+</table>
+<h3>Group Bridges (smallest modularity vitality)</h3>
+<p>Modularity Vitality measures the change in the cluster quality (measured by modularity) when a single node is removed. A negative score indicates that the node acts a bridge by connecting different groups.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p></p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='80px'/>
+<col width='300px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Row nodes</th>
+<th>Value</th>
+<th>Nodeset</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:blue'>dams</td>
+<td style='color:blue'>-0.020</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:blue'>China</td>
+<td style='color:blue'>-0.005</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:blue'>USMC</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:blue'>和布林肯国务卿一起，参加精彩的美-印</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:blue'>コープノース２２</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:blue'>JusticeForJenniferLaude</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:blue'>MonitorASEAN</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:blue'>AmphibiousRapidDeployment</td>
+<td style='color:blue'>-0.004</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:blue'>Soldiers</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:blue'>Assurance</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:blue'>InTheRegion</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:blue'>congrats</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:blue'>Readiness</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:blue'>JunkVFAEDCA</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:blue'>AFPyoucanTRUST</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:blue'>wheeled</td>
+<td style='color:blue'>-0.003</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:blue'>specialeurasia</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:blue'>circle</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:blue'>quezon</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:blue'>インド太平洋</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:blue'>tonight</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:blue'>patriot</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:blue'>fosse</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:blue'>whole-day</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:blue'>classroom</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:blue'>est</td>
+<td style='color:blue'>-0.002</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:blue'>progressive</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:blue'>印太平洋</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:blue'>USA</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:blue'>diget</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:blue'>engineer</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:blue'>port</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:blue'>JoinAnakbayan</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:blue'>friendspartnerallies</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:blue'>starting</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:blue'>NavyPartnerships</td>
+<td style='color:blue'>-0.001</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:blue'>justin</td>
+<td style='color:blue'>-9.742e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:blue'>mc3</td>
+<td style='color:blue'>-9.742e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:blue'>egg</td>
+<td style='color:blue'>-9.547e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:blue'>passing</td>
+<td style='color:blue'>-9.514e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:blue'>กองทัพบกไทยจัดพิธีรับมอบยานเกราะล้อยาง</td>
+<td style='color:blue'>-9.468e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:blue'>PatriotMissileSystem</td>
+<td style='color:blue'>-9.393e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:blue'>prethodne</td>
+<td style='color:blue'>-9.264e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:blue'>first-ever</td>
+<td style='color:blue'>-9.163e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:blue'>happy</td>
+<td style='color:blue'>-9.051e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:blue'>JunkEDCA</td>
+<td style='color:blue'>-8.889e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:blue'>iz</td>
+<td style='color:blue'>-8.046e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:blue'>pnw</td>
+<td style='color:blue'>-7.985e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:blue'>cpl</td>
+<td style='color:blue'>-7.680e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:blue'>record-size</td>
+<td style='color:blue'>-7.027e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:blue'>arctic</td>
+<td style='color:blue'>-6.932e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:blue'>ceremony</td>
+<td style='color:blue'>-6.640e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:blue'>AFP</td>
+<td style='color:blue'>-6.630e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:blue'>assault</td>
+<td style='color:blue'>-6.509e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:blue'>Balikatan</td>
+<td style='color:blue'>-6.410e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:blue'>MDXARB</td>
+<td style='color:blue'>-6.013e-04</td>
+<td style='color:blue'>Hashtag</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:blue'>plays</td>
+<td style='color:blue'>-5.913e-04</td>
+<td style='color:blue'>Word</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:green'>BRAHMOS</td>
+<td style='color:green'>-5.804e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:green'>birdbath</td>
+<td style='color:green'>-5.779e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:green'>bantayog</td>
+<td style='color:green'>-5.492e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:green'>fit</td>
+<td style='color:green'>-5.449e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:green'>tokyo</td>
+<td style='color:green'>-5.377e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:green'>bay</td>
+<td style='color:green'>-5.228e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:green'>peasants</td>
+<td style='color:green'>-5.031e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:green'>visible</td>
+<td style='color:green'>-4.895e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:green'>dollars</td>
+<td style='color:green'>-4.783e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:green'>mv-22b</td>
+<td style='color:green'>-4.750e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:green'>fighter</td>
+<td style='color:green'>-4.704e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:green'>FSVendémiaire</td>
+<td style='color:green'>-4.686e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:green'>JSInazuma</td>
+<td style='color:green'>-4.642e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:green'>boat</td>
+<td style='color:green'>-4.631e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:green'>promotes</td>
+<td style='color:green'>-4.355e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:green'>training</td>
+<td style='color:green'>-4.340e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:green'>armored</td>
+<td style='color:green'>-4.287e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:green'>crew</td>
+<td style='color:green'>-4.200e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:green'>stratofortress</td>
+<td style='color:green'>-4.187e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:green'>skyler</td>
+<td style='color:green'>-4.152e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:green'>watch</td>
+<td style='color:green'>-4.152e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:green'>‘s</td>
+<td style='color:green'>-4.152e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:green'>north</td>
+<td style='color:green'>-4.092e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:green'>imperyalismong</td>
+<td style='color:green'>-4.083e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:green'>global</td>
+<td style='color:green'>-3.999e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:green'>31</td>
+<td style='color:green'>-3.949e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:green'>counterterrorism</td>
+<td style='color:green'>-3.845e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:green'>network</td>
+<td style='color:green'>-3.834e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:green'>modernization</td>
+<td style='color:green'>-3.828e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:green'>rotonda</td>
+<td style='color:green'>-3.767e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:green'>tongvaland</td>
+<td style='color:green'>-3.758e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:green'>SeaOfJapan</td>
+<td style='color:green'>-3.704e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:green'>law</td>
+<td style='color:green'>-3.601e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:green'>submarine</td>
+<td style='color:green'>-3.566e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:green'>balikatan</td>
+<td style='color:green'>-3.560e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:green'>effort</td>
+<td style='color:green'>-3.444e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:green'>ArcticSecurity</td>
+<td style='color:green'>-3.433e-04</td>
+<td style='color:green'>Hashtag</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:green'>hard</td>
+<td style='color:green'>-3.382e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:green'>alicia</td>
+<td style='color:green'>-3.266e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:green'>company</td>
+<td style='color:green'>-3.266e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:green'>counterparts</td>
+<td style='color:green'>-3.266e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:green'>dedication</td>
+<td style='color:green'>-3.266e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:green'>pose</td>
+<td style='color:green'>-3.266e-04</td>
+<td style='color:green'>Word</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>-0.020</td>
+<td>Mean:</td>
+<td>1.809e-06</td>
+<td>Lower quartile:</td>
+<td>-5.761e-06</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>0.001</td>
+<td>Std.dev:</td>
+<td>5.848e-04</td>
+<td>Median:</td>
+<td>9.761e-06</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>6.099e-05</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p>Send comments or questions on this report to <a href='https://groups.google.com/g/ORA-google-group?pli=1'>ORA Google Group</a></p>
+<p>Produced by ORA, a joint product of the CASOS center at Carnegie Mellon University and Netanomics</p>
