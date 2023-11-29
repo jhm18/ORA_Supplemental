@@ -1,0 +1,170 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>STANCE DETECTION REPORT</title>
+<link rel='stylesheet' type='text/css' href='Stance Detection-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>STANCE DETECTION REPORT</h1>
+<blockquote>
+<p>Input data: Balikatan_2022_Reduced</p>
+<p>Start time: Tue Nov 28 21:06:43 2023
+</p>
+<p><a href="Stance Detection_network-data-description.html">Data Description</a></p>
+</blockquote>
+<blockquote>
+<p>Stance Detection computes Pro/Con stances for nodes in a primary nodeset and for nodesets linked to them. Initial 'seed' stances for the Primary nodes are specified directly or derived from neighbor nodes. Primary node stances are then propagated across interaction networks.</p>
+<p>Social media data with document nodes, a document authorship network, and document x concept networks can use the Document label propagation algorithm to improve results.</p>
+<h2>Parameters</h2>
+<blockquote>
+<table>
+<col width='300px'/>
+<col width='300px'/>
+<tr>
+<td>Primary nodeset</td>
+<td>Agent</td>
+</tr>
+<tr>
+<td>Seed nodesets:</td>
+<td>Hashtag, Url</td>
+</tr>
+<tr>
+<td>Primary x Neighbor stance networks:</td>
+<td>Agent x Hashtag, Agent x Url</td>
+</tr>
+<tr>
+<td>Primary x Primary interaction networks:</td>
+<td>Agent x Agent - Retweeted-By (transposed), Agent x Agent - All Communication (transposed)</td>
+</tr>
+<tr>
+<td>Additional nodesets to compute stances for:</td>
+<td>Tweet</td>
+</tr>
+<tr>
+<td>Additional networks used to compute stances:</td>
+<td>Tweet x Hashtag, Tweet x Url</td>
+</tr>
+<tr>
+<td>Algorithm:</td>
+<td>General label propagation</td>
+</tr>
+<tr>
+<td>Random seed:</td>
+<td>0</td>
+</tr>
+</table>
+</blockquote>
+<h2>Stance Results</h2>
+<blockquote>
+<p>Select a nodeset link below for an analysis of its computed stances.</p>
+<p><a href="Stance Detection_Agent.html">Agent nodeset</a></p>
+<p><a href="Stance Detection_Hashtag.html">Hashtag nodeset</a></p>
+<p><a href="Stance Detection_Url.html">Url nodeset</a></p>
+<p><a href="Stance Detection_Tweet.html">Tweet nodeset</a></p>
+</blockquote>
+<h2>Initial Node Stances (seeds)</h2>
+<blockquote>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Nodeset</th>
+<th>Node</th>
+<th>Stance</th>
+</tr>
+</thead>
+<tr>
+<td>Hashtag</td>
+<td>FreeandOpenIndoPacific</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>Readiness</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>StrongerTogether</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>Lethality</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>AFPyoucanTRUST</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>ModernandMultiCapablePHNavy</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>VMFA22</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>NavyPartnerships</td>
+<td>pro</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>ImperyalismoIbagsak</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>NoToBalikatanExercises2022</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>JusticeForJenniferLaude</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>JunkVFAEDCA</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>USTroopsOutNow</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>JunkVFA</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>JunkEDCA</td>
+<td>con</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>DownWithUSImperialism</td>
+<td>con</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p>Send comments or questions on this report to <a href='https://groups.google.com/g/ORA-google-group?pli=1'>ORA Google Group</a></p>
+<p>Produced by ORA, a joint product of the CASOS center at Carnegie Mellon University and Netanomics</p>
+</html>
