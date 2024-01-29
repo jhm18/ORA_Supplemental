@@ -1,0 +1,3134 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Agent Analysis</title>
+<link rel='stylesheet' type='text/css' href='BEND & Community Assessment_All Actors-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Agent Analysis</h1>
+<blockquote>
+<p>This page has overall information and analyses for agents.</p>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<td>Number of agents:</td>
+<td>1,259</td>
+</tr>
+<tr>
+<td>Number of agents maneuvering in at least one BEND category:</td>
+<td>882</td>
+<td>70.06% (of total agents)</td>
+</tr>
+<tr>
+<td>Number of agents maneuvered-upon in at least one BEND category:</td>
+<td>85</td>
+<td>6.75% (of total agents)</td>
+</tr>
+<tr>
+<td>Sum of agent maneuverers across all BEND categories:</td>
+<td>6,164</td>
+</tr>
+<tr>
+<td>Sum of agents maneuvered-upon across all BEND categories:</td>
+<td>944</td>
+</tr>
+</table>
+<h2>BEND Agent Maneuvers</h2>
+<blockquote>
+<p>The chart below shows the number of agents in each BEND category that maneuvered or were maneuvered-upon. An agent is computed to be in a BEND category by averaging a collection of metrics to produce a likelihood and strength (or confidence) of category membership. An agent with a likelihood value greater than the Mean is counted as a member.</p>
+<p><div class='chart'><div class='chart-title'>Number of Agents Per Bend Category</div><table><td class='chart-y-axis-title'>Number of Agents</td><td><canvas class='chart-canvas' id='BEND & Community Assessment_All Actorsagent-analysis-overview-agents-per-bend-category-bar-chart'></canvas></td></table><div class='chart-x-axis-title'>Bend Category</div><script type='text/javascript' src='BEND & Community Assessment_All Actorsagent-analysis-overview-agents-per-bend-category-bar-chart.js'></script></div></p>
+<h3>Agents Maneuvering</h3>
+<blockquote>
+<p>The chart below shows the number of agents in each BEND category that maneuvered.</p>
+<p><div class='chart'><canvas class='chart-canvas' id='BEND & Community Assessment_All Actorsagent-analysis-overview-agent-maneuvers-per-bend-category-spider-chart'></canvas><script type='text/javascript' src='BEND & Community Assessment_All Actorsagent-analysis-overview-agent-maneuvers-per-bend-category-spider-chart.js'></script></div></p>
+</blockquote>
+<h3>Agents Maneuvered-Upon</h3>
+<blockquote>
+<p>The chart below shows the number of agents in each BEND category that were maneuvered-upon.</p>
+<p><div class='chart'><canvas class='chart-canvas' id='BEND & Community Assessment_All Actorsagent-analysis-overview-agents-maneuvered-upon-per-bend-category-spider-chart'></canvas><script type='text/javascript' src='BEND & Community Assessment_All Actorsagent-analysis-overview-agents-maneuvered-upon-per-bend-category-spider-chart.js'></script></div></p>
+</blockquote>
+<p>Click the links below for a detailed analysis of each BEND category. Categories with no agents are not listed.</p>
+<table>
+<col width='100px'/>
+<tr>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Back.html">Back</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Build.html">Build</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Bridge.html">Bridge</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Boost.html">Boost</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Excite.html">Excite</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Engage.html">Engage</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Explain.html">Explain</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Enhance.html">Enhance</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Neutralize.html">Neutralize</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Negate.html">Negate</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Narrow.html">Narrow</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Neglect.html">Neglect</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Dismay.html">Dismay</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Dismiss.html">Dismiss</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Distort.html">Distort</a></td>
+<td><a href="BEND & Community Assessment_All Actors_agent-analysis-Distract.html">Distract</a></td>
+</table>
+</blockquote>
+<h2>Agents Maneuvering the Most Overall</h2>
+<blockquote>
+<p>This shows the agents that are maneuvering (targeting) the most across all bend categories. The maneuver counts for each agent are summed across all categories.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p></p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='300px'/>
+<col width='80px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Agent ID</th>
+<th>Agent Label</th>
+<th>Value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>1269979163726938114</td>
+<td style='color:red'>Fernand39170590[bot]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>923807628240723968</td>
+<td style='color:red'>JohnsonThongLP[bot]</td>
+<td style='color:red'>0.990</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>389950297</td>
+<td style='color:red'>wadakashiho[bot]</td>
+<td style='color:red'>0.988</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>3114693488</td>
+<td style='color:red'>Turgut_Guliyev[bot]</td>
+<td style='color:red'>0.984</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>1124877633206931456</td>
+<td style='color:red'>woMfbJKqIvydpRP[bot]</td>
+<td style='color:red'>0.978</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>2952411097</td>
+<td style='color:red'>yasuhito_0722[bot]</td>
+<td style='color:red'>0.975</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>1448413205538148357</td>
+<td style='color:red'>AndyMcCoy4real[bot]</td>
+<td style='color:red'>0.956</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>1162944823457792003</td>
+<td style='color:red'>1JZGTE2000[bot]</td>
+<td style='color:red'>0.956</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>1415568543970627584</td>
+<td style='color:red'>ClenKell[bot]</td>
+<td style='color:red'>0.950</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>1416453858566578185</td>
+<td style='color:red'>MChelseagirl[bot]</td>
+<td style='color:red'>0.945</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>1086159045604577280</td>
+<td style='color:red'>sondravet22[bot]</td>
+<td style='color:red'>0.940</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>1331181553834070017</td>
+<td style='color:red'>Koronuru[bot]</td>
+<td style='color:red'>0.935</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>81155662</td>
+<td style='color:red'>US_STRATCOM[+]</td>
+<td style='color:red'>0.932</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>1508751607823237125</td>
+<td style='color:red'>SanjuSa46005906[bot]</td>
+<td style='color:red'>0.930</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>1287435194316677121</td>
+<td style='color:red'>ASsuuna1[bot]</td>
+<td style='color:red'>0.928</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>24112747</td>
+<td style='color:red'>INDOPACOM[+]</td>
+<td style='color:red'>0.925</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>378280914</td>
+<td style='color:red'>StriebRoman[bot]</td>
+<td style='color:red'>0.920</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>1337040795086499841</td>
+<td style='color:red'>rebelysyon</td>
+<td style='color:red'>0.908</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>1511704288401059840</td>
+<td style='color:red'>CordiDayMM[bot]</td>
+<td style='color:red'>0.908</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>2216405453</td>
+<td style='color:red'>PacificMarines[+]</td>
+<td style='color:red'>0.903</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>579561567</td>
+<td style='color:red'>Xezdamsel37[bot]</td>
+<td style='color:red'>0.896</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>28468549</td>
+<td style='color:red'>USPacificFleet[+]</td>
+<td style='color:red'>0.896</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>1004722948043755521</td>
+<td style='color:red'>SiakNiKR[bot]</td>
+<td style='color:red'>0.881</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>1163719671117303808</td>
+<td style='color:red'>KatsuhikoTsuda[bot]</td>
+<td style='color:red'>0.854</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>1241977585673752576</td>
+<td style='color:red'>provider808[bot]</td>
+<td style='color:red'>0.848</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>1461826921206059020</td>
+<td style='color:red'>steps_ka[bot]</td>
+<td style='color:red'>0.840</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>3837500787</td>
+<td style='color:red'>IPDefenseForum[bot]</td>
+<td style='color:red'>0.838</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>298244970</td>
+<td style='color:red'>zero2152[bot]</td>
+<td style='color:red'>0.828</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>1347911851351404544</td>
+<td style='color:red'>Tinker_Sparked</td>
+<td style='color:red'>0.817</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>982518512630616065</td>
+<td style='color:red'>Juan160628862[bot]</td>
+<td style='color:red'>0.812</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>754661367651504128</td>
+<td style='color:red'>T_AH19[bot]</td>
+<td style='color:red'>0.811</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:red'>2363702751</td>
+<td style='color:red'>jhop4749[bot]</td>
+<td style='color:red'>0.798</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:red'>1170784150468476929</td>
+<td style='color:red'>RobertW81555222[bot]</td>
+<td style='color:red'>0.796</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:red'>1258464081041858567</td>
+<td style='color:red'>Glenda37241419[bot]</td>
+<td style='color:red'>0.781</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:red'>1486097077</td>
+<td style='color:red'>JorgePonceCaraz[bot]</td>
+<td style='color:red'>0.773</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:red'>3231463644</td>
+<td style='color:red'>f86d_</td>
+<td style='color:red'>0.771</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:red'>422577072</td>
+<td style='color:red'>aevum2020[bot]</td>
+<td style='color:red'>0.771</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:red'>1021597353910796294</td>
+<td style='color:red'>defense_sloot</td>
+<td style='color:red'>0.762</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:red'>1493820130228195331</td>
+<td style='color:red'>GokhanHidir[bot]</td>
+<td style='color:red'>0.760</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:red'>2308345490</td>
+<td style='color:red'>JANET_redstar[bot]</td>
+<td style='color:red'>0.757</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:red'>20422178</td>
+<td style='color:red'>Bizarro001[bot]</td>
+<td style='color:red'>0.754</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:red'>59872846</td>
+<td style='color:red'>ClubCabeza[bot]</td>
+<td style='color:red'>0.751</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:red'>1172106776646279168</td>
+<td style='color:red'>ABranger_wife</td>
+<td style='color:red'>0.749</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:red'>1447182320616812544</td>
+<td style='color:red'>AttackCupcake[bot]</td>
+<td style='color:red'>0.729</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:red'>1170689281142272001</td>
+<td style='color:red'>BL1ND3RS0FF[bot]</td>
+<td style='color:red'>0.725</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:red'>1331769324</td>
+<td style='color:red'>DonnaEBecton[bot]</td>
+<td style='color:red'>0.725</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:red'>2395685646</td>
+<td style='color:red'>WINDVONDERVENUS[bot]</td>
+<td style='color:red'>0.724</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:red'>406250308</td>
+<td style='color:red'>2reconb_laxer</td>
+<td style='color:red'>0.719</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:red'>147012730</td>
+<td style='color:red'>youma9000[bot]</td>
+<td style='color:red'>0.713</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:red'>1347985862160654337</td>
+<td style='color:red'>Wendigo114[bot]</td>
+<td style='color:red'>0.708</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:red'>1312049760317120513</td>
+<td style='color:red'>andreha12765643[bot]</td>
+<td style='color:red'>0.695</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:red'>4481687056</td>
+<td style='color:red'>jdh_harms[bot]</td>
+<td style='color:red'>0.695</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:red'>54885400</td>
+<td style='color:red'>USNavy[+][gov]</td>
+<td style='color:red'>0.692</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:red'>1194720234017558528</td>
+<td style='color:red'>Heathermarymag[bot]</td>
+<td style='color:red'>0.680</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:red'>858042162860183552</td>
+<td style='color:red'>AliciaLisaGrag2[bot]</td>
+<td style='color:red'>0.679</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:red'>1263038801883967489</td>
+<td style='color:red'>ChrisWelber[bot]</td>
+<td style='color:red'>0.677</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:red'>1348136616058114048</td>
+<td style='color:red'>ShellyForce1[bot]</td>
+<td style='color:red'>0.675</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:red'>19805682</td>
+<td style='color:red'>zachvat[bot]</td>
+<td style='color:red'>0.672</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:red'>1449085848444493825</td>
+<td style='color:red'>BurrisSuarez[bot]</td>
+<td style='color:red'>0.671</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:red'>3197436926</td>
+<td style='color:red'>Nori_cb[bot]</td>
+<td style='color:red'>0.659</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:red'>114901297</td>
+<td style='color:red'>kikitoscout[bot]</td>
+<td style='color:red'>0.653</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:red'>1362247381702610944</td>
+<td style='color:red'>MindyG50986913[bot]</td>
+<td style='color:red'>0.641</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:red'>92611744</td>
+<td style='color:red'>USARPAC[+]</td>
+<td style='color:red'>0.636</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:red'>2725272744</td>
+<td style='color:red'>OnoMilo06[bot]</td>
+<td style='color:red'>0.636</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:red'>731886457799999488</td>
+<td style='color:red'>Mzahem_Alsaloum[bot]</td>
+<td style='color:red'>0.633</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:red'>78489442</td>
+<td style='color:red'>USEmbassyPH[+]</td>
+<td style='color:red'>0.622</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:red'>935243065911996416</td>
+<td style='color:red'>mE4j7FpRmSV07MI[bot]</td>
+<td style='color:red'>0.622</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:red'>1137331911313899520</td>
+<td style='color:red'>2019_yoshiko[bot]</td>
+<td style='color:red'>0.609</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:red'>71032085</td>
+<td style='color:red'>WillKlaver[bot]</td>
+<td style='color:red'>0.608</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:red'>2188654916</td>
+<td style='color:red'>defined_un_sort[bot]</td>
+<td style='color:red'>0.604</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:red'>262425295</td>
+<td style='color:red'>cucojose[bot]</td>
+<td style='color:red'>0.604</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:red'>205474999</td>
+<td style='color:red'>ivolkman[bot]</td>
+<td style='color:red'>0.601</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:red'>1441952749587894280</td>
+<td style='color:red'>rose_howdy[bot]</td>
+<td style='color:red'>0.586</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:red'>1432532274621272066</td>
+<td style='color:red'>PanaghiusaPH[bot]</td>
+<td style='color:red'>0.584</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:red'>939341267040796673</td>
+<td style='color:red'>Dale116dot7[bot]</td>
+<td style='color:red'>0.583</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:red'>1165575239461261312</td>
+<td style='color:red'>togokubooks[bot]</td>
+<td style='color:red'>0.582</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:red'>49732748</td>
+<td style='color:red'>tofogfan[bot]</td>
+<td style='color:red'>0.577</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:red'>116056117</td>
+<td style='color:red'>MAC__V</td>
+<td style='color:red'>0.573</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:red'>1214215640912822272</td>
+<td style='color:red'>derik_rivera</td>
+<td style='color:red'>0.569</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:red'>1945463636</td>
+<td style='color:red'>pitukpongpreech[bot]</td>
+<td style='color:red'>0.565</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:red'>2511882350</td>
+<td style='color:red'>katribuphils[bot]</td>
+<td style='color:red'>0.561</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:red'>827343025470738433</td>
+<td style='color:red'>1stMAW_Marines[+]</td>
+<td style='color:red'>0.555</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:red'>1393536165857406982</td>
+<td style='color:red'>NelsColeman[bot]</td>
+<td style='color:red'>0.536</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:red'>70752796</td>
+<td style='color:red'>ShtfLiving[bot]</td>
+<td style='color:red'>0.521</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:red'>873411716</td>
+<td style='color:red'>muhamedkalema1[bot]</td>
+<td style='color:red'>0.515</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:red'>3660328812</td>
+<td style='color:red'>douglaschongys[bot]</td>
+<td style='color:red'>0.512</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:red'>506912325</td>
+<td style='color:red'>ANTHONY54W[bot]</td>
+<td style='color:red'>0.509</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:red'>44890357</td>
+<td style='color:red'>DemsAbroadCan</td>
+<td style='color:red'>0.508</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:red'>1358535923072385024</td>
+<td style='color:red'>lareed2012[bot]</td>
+<td style='color:red'>0.503</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:red'>18749026</td>
+<td style='color:red'>PACAF[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:red'>892118401</td>
+<td style='color:red'>spallaxo[bot]</td>
+<td style='color:red'>0.495</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:red'>1513380994287472642</td>
+<td style='color:red'>zhouxiaofang6[bot]</td>
+<td style='color:red'>0.492</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:red'>1458746884491673601</td>
+<td style='color:red'>JuliWo16515037[bot]</td>
+<td style='color:red'>0.491</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:red'>2407961990</td>
+<td style='color:red'>amirshafyq[bot]</td>
+<td style='color:red'>0.489</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:red'>1070960078629425152</td>
+<td style='color:red'>xj99k63kPVdK96w[bot]</td>
+<td style='color:red'>0.484</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:red'>129609017</td>
+<td style='color:red'>FighterJets916[bot]</td>
+<td style='color:red'>0.481</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:red'>1497516918382628867</td>
+<td style='color:red'>mquintero2030[bot]</td>
+<td style='color:red'>0.467</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:red'>897099537751343104</td>
+<td style='color:red'>Martinacuna1965[bot]</td>
+<td style='color:red'>0.462</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:red'>2367458396</td>
+<td style='color:red'>djsmith1716[bot]</td>
+<td style='color:red'>0.454</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:red'>612397643</td>
+<td style='color:red'>sflore83[bot]</td>
+<td style='color:red'>0.453</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>0.183</td>
+<td>Lower quartile:</td>
+<td>0.070</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>1</td>
+<td>Std.dev:</td>
+<td>0.184</td>
+<td>Median:</td>
+<td>0.132</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>0.208</td>
+</tr>
+</table>
+</blockquote>
+<h2>Agents Maneuvered-Upon the Most Overall</h2>
+<blockquote>
+<p>This shows the agents that are maneuvered-upon (targeted) the most across all bend categories. The maneuvered-upon counts for each agent are summed across all categories.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p></p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='300px'/>
+<col width='80px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Agent ID</th>
+<th>Agent Label</th>
+<th>Value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>54885400</td>
+<td style='color:red'>USNavy[+][gov]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>18749026</td>
+<td style='color:red'>PACAF[+]</td>
+<td style='color:red'>0.987</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>24112747</td>
+<td style='color:red'>INDOPACOM[+]</td>
+<td style='color:red'>0.972</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>25930421</td>
+<td style='color:red'>US7thFleet[+]</td>
+<td style='color:red'>0.954</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>10126672</td>
+<td style='color:red'>USMC[+][gov]</td>
+<td style='color:red'>0.953</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>1122760625283670016</td>
+<td style='color:red'>3d_Marine_Div[+]</td>
+<td style='color:red'>0.941</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>1017578055072604160</td>
+<td style='color:red'>jmsdf_pao_eng[+]</td>
+<td style='color:red'>0.934</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>201601822</td>
+<td style='color:red'>TeamAFP</td>
+<td style='color:red'>0.922</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>8775672</td>
+<td style='color:red'>USArmy[gov]</td>
+<td style='color:red'>0.917</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>19611483</td>
+<td style='color:red'>usairforce[*][gov]</td>
+<td style='color:red'>0.901</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>28468549</td>
+<td style='color:red'>USPacificFleet[+]</td>
+<td style='color:red'>0.891</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>3307687069</td>
+<td style='color:red'>CPA_Cordillera[bot]</td>
+<td style='color:red'>0.884</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>2216405453</td>
+<td style='color:red'>PacificMarines[+]</td>
+<td style='color:red'>0.881</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>83795099</td>
+<td style='color:red'>NATO[gov]</td>
+<td style='color:red'>0.874</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>115684356</td>
+<td style='color:red'>AFGlobalStrike</td>
+<td style='color:red'>0.874</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>2511882350</td>
+<td style='color:red'>katribuphils[bot]</td>
+<td style='color:red'>0.867</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>92611744</td>
+<td style='color:red'>USARPAC[+]</td>
+<td style='color:red'>0.859</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>951720519203635201</td>
+<td style='color:red'>takderkordi[bot]</td>
+<td style='color:red'>0.840</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>1176545268415619072</td>
+<td style='color:red'>agbinnadangtayo[bot]</td>
+<td style='color:red'>0.840</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>227557590</td>
+<td style='color:red'>yourphilarmy</td>
+<td style='color:red'>0.829</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>2744294556</td>
+<td style='color:red'>Japan_GSDF[+]</td>
+<td style='color:red'>0.826</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>1267345823236411392</td>
+<td style='color:red'>katribu_natl[bot]</td>
+<td style='color:red'>0.822</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>1432532274621272066</td>
+<td style='color:red'>PanaghiusaPH[bot]</td>
+<td style='color:red'>0.822</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>66369181</td>
+<td style='color:red'>DeptofDefense[+][gov]</td>
+<td style='color:red'>0.813</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>4068016160</td>
+<td style='color:red'>tni_ad[+]</td>
+<td style='color:red'>0.811</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>1172411775934849029</td>
+<td style='color:red'>JASDF_PAO_ENG[+]</td>
+<td style='color:red'>0.803</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>2493948451</td>
+<td style='color:red'>PhilAirForce</td>
+<td style='color:red'>0.803</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>809841734058393600</td>
+<td style='color:red'>USAmbCanada</td>
+<td style='color:red'>0.764</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>3252386060</td>
+<td style='color:red'>IIIMEF</td>
+<td style='color:red'>0.735</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>63689241</td>
+<td style='color:red'>TheKejOfGlory[bot]</td>
+<td style='color:red'>0.720</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>827343025470738433</td>
+<td style='color:red'>1stMAW_Marines[+]</td>
+<td style='color:red'>0.694</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:red'>954388280656633856</td>
+<td style='color:red'>3rdmaw</td>
+<td style='color:red'>0.683</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:red'>1410037232937803777</td>
+<td style='color:red'>USIRCOnline</td>
+<td style='color:red'>0.651</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:red'>122607866</td>
+<td style='color:red'>anjo_bagaoisan</td>
+<td style='color:red'>0.648</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:red'>93471126</td>
+<td style='color:red'>usembassytokyo[+]</td>
+<td style='color:red'>0.634</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:red'>829130191532220416</td>
+<td style='color:red'>USARJ_PAO[+]</td>
+<td style='color:red'>0.615</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:red'>1350150750966603777</td>
+<td style='color:red'>SecBlinken</td>
+<td style='color:red'>0.600</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:red'>265814534</td>
+<td style='color:red'>JGSDF_pr</td>
+<td style='color:red'>0.597</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:red'>1156734634257817600</td>
+<td style='color:red'>38thADA</td>
+<td style='color:red'>0.560</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:red'>16565260</td>
+<td style='color:red'>flynavy</td>
+<td style='color:red'>0.551</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:red'>102722975</td>
+<td style='color:red'>SurfaceWarriors[+]</td>
+<td style='color:red'>0.549</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:red'>1443618306716471304</td>
+<td style='color:red'>ANRALCOM</td>
+<td style='color:red'>0.511</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:red'>81155662</td>
+<td style='color:red'>US_STRATCOM[+]</td>
+<td style='color:red'>0.499</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:red'>540532607</td>
+<td style='color:red'>DZAR1026</td>
+<td style='color:red'>0.466</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:red'>1240414825596874752</td>
+<td style='color:red'>smninews</td>
+<td style='color:red'>0.442</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:red'>970153086982307840</td>
+<td style='color:red'>philtfip[bot]</td>
+<td style='color:red'>0.436</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:red'>3066238416</td>
+<td style='color:red'>MMakalalad[+][bot]</td>
+<td style='color:red'>0.436</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:red'>82306946</td>
+<td style='color:red'>USEmbassyPrague[+]</td>
+<td style='color:red'>0.384</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:red'>1734618349</td>
+<td style='color:red'>AyeshaRekhi[bot]</td>
+<td style='color:red'>0.383</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:red'>493480037</td>
+<td style='color:red'>ObranaTweetuje[gov]</td>
+<td style='color:red'>0.378</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:red'>1380265270137257987</td>
+<td style='color:red'>DeputySecState[+]</td>
+<td style='color:red'>0.375</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:red'>1083407707028238342</td>
+<td style='color:red'>NORADCommand[+]</td>
+<td style='color:red'>0.366</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:red'>1279630596633800706</td>
+<td style='color:red'>anakbayansc</td>
+<td style='color:red'>0.363</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:red'>731364674</td>
+<td style='color:red'>chinfo</td>
+<td style='color:red'>0.357</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:red'>1511704288401059840</td>
+<td style='color:red'>CordiDayMM[bot]</td>
+<td style='color:red'>0.343</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:red'>441540997</td>
+<td style='color:red'>USAmbPH[+]</td>
+<td style='color:red'>0.294</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:red'>78489442</td>
+<td style='color:red'>USEmbassyPH[+]</td>
+<td style='color:red'>0.259</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:red'>754923996</td>
+<td style='color:red'>Philippine_Navy[+]</td>
+<td style='color:red'>0.258</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:red'>461853598</td>
+<td style='color:red'>dzbb[+][*]</td>
+<td style='color:red'>0.256</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:red'>1500244448957149193</td>
+<td style='color:red'>RaptorOne9[bot]</td>
+<td style='color:red'>0.218</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:red'>1448368746041647108</td>
+<td style='color:red'>CounselorDOS</td>
+<td style='color:red'>0.212</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:red'>1172106776646279168</td>
+<td style='color:red'>ABranger_wife</td>
+<td style='color:red'>0.212</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:red'>15448383</td>
+<td style='color:red'>inquirerdotnet[*]</td>
+<td style='color:red'>0.201</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:green'>111344559</td>
+<td style='color:green'>GuardMaine</td>
+<td style='color:green'>0.183</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:green'>491468208</td>
+<td style='color:green'>ACIRAtlanta</td>
+<td style='color:green'>0.171</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:green'>921099321172520960</td>
+<td style='color:green'>PauGuzATL</td>
+<td style='color:green'>0.171</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:green'>1427397671409487886</td>
+<td style='color:green'>MarkMinhNguyen</td>
+<td style='color:green'>0.168</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:green'>2817062262</td>
+<td style='color:green'>CanEmbCZ</td>
+<td style='color:green'>0.166</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:green'>63411616</td>
+<td style='color:green'>TheManilaTimes[*]</td>
+<td style='color:green'>0.160</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:green'>964885009</td>
+<td style='color:green'>TravisRGray</td>
+<td style='color:green'>0.160</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:green'>26980273</td>
+<td style='color:green'>kozakj</td>
+<td style='color:green'>0.142</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:green'>1338994562090602497</td>
+<td style='color:green'>SecDef[+]</td>
+<td style='color:green'>0.138</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:green'>900079815574867968</td>
+<td style='color:green'>Todd_spinner</td>
+<td style='color:green'>0.134</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:green'>579411773</td>
+<td style='color:green'>brockc32</td>
+<td style='color:green'>0.134</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:green'>3072288740</td>
+<td style='color:green'>JIATFWest</td>
+<td style='color:green'>0.116</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:green'>1379849189081837572</td>
+<td style='color:green'>PhillH17</td>
+<td style='color:green'>0.116</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:green'>1067308099</td>
+<td style='color:green'>coastguardph</td>
+<td style='color:green'>0.116</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:green'>15872418</td>
+<td style='color:green'>ABSCBNNews[+][*]</td>
+<td style='color:green'>0.102</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:green'>316937242</td>
+<td style='color:green'>StanfordWBBBlog</td>
+<td style='color:green'>0.090</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:green'>74886399</td>
+<td style='color:green'>dzrhnews[*][bot]</td>
+<td style='color:green'>0.081</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:green'>1493823703607832577</td>
+<td style='color:green'>USARJ_PA</td>
+<td style='color:green'>0.012</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:green'>268016211</td>
+<td style='color:green'>8thTSC[+]</td>
+<td style='color:green'>0.012</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:green'>3837500787</td>
+<td style='color:green'>IPDefenseForum[bot]</td>
+<td style='color:green'>0.011</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:green'>1237824952113303552</td>
+<td style='color:green'>5thSFAB[+]</td>
+<td style='color:green'>0.011</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:green'>2785294014</td>
+<td style='color:green'>DESRON_7[+]</td>
+<td style='color:green'>0.010</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:green'>1496277013908553730</td>
+<td style='color:green'>Montibon3Pol</td>
+<td style='color:green'>6.733e-04</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:green'>1487041979795980289</td>
+<td style='color:green'>BosesTiAmianan[bot]</td>
+<td style='color:green'>5.744e-04</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:green'>883172101309386752</td>
+<td style='color:green'>AnakbayanUST[bot]</td>
+<td style='color:green'>5.568e-04</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:green'>2811559122</td>
+<td style='color:green'>cnnphilippines[+][*]</td>
+<td style='color:green'>5.391e-04</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:green'>1115213444578402304</td>
+<td style='color:green'>PilipinasScm[bot]</td>
+<td style='color:green'>4.402e-04</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:green'>706087110424420353</td>
+<td style='color:green'>elepsuplb[bot]</td>
+<td style='color:green'>4.132e-04</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:green'>2635320355</td>
+<td style='color:green'>lloydsalibi[bot]</td>
+<td style='color:green'>3.143e-04</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:green'>351750739</td>
+<td style='color:green'>joesciuto1[bot]</td>
+<td style='color:green'>2.425e-04</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:green'>1478840722518282241</td>
+<td style='color:green'>USARPAC_CG[+]</td>
+<td style='color:green'>2.154e-04</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:green'>44728980</td>
+<td style='color:green'>ANCALERTS[+][*]</td>
+<td style='color:green'>1.707e-04</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:green'>925641636583010304</td>
+<td style='color:green'>CAAUniLodz[bot]</td>
+<td style='color:green'>1.707e-04</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:green'>2590721768</td>
+<td style='color:green'>CDF_Aust[+]</td>
+<td style='color:green'>1.707e-04</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:green'>1204242402103267328</td>
+<td style='color:green'>USAmbThailand[+]</td>
+<td style='color:green'>1.707e-04</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:green'>1032125483519856640</td>
+<td style='color:green'>elepsbaguio[bot]</td>
+<td style='color:green'>1.707e-04</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:green'>1186921798299897857</td>
+<td style='color:green'>JASDF_adc_pao[+]</td>
+<td style='color:green'>1.436e-04</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>0.034</td>
+<td>Lower quartile:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>1</td>
+<td>Std.dev:</td>
+<td>0.151</td>
+<td>Median:</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>0</td>
+</tr>
+</table>
+</blockquote>
+<h2>Super Friends</h2>
+<blockquote>
+<p>Super Friends are users that exhibit frequent two-way communication, facilitating large or strong communication networks. This has been computed on the union of all agent interaction networks.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p>Input networks: Agent x Agent - All Communication</p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='300px'/>
+<col width='80px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Agent ID</th>
+<th>Agent Label</th>
+<th>Value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>1156734634257817600</td>
+<td style='color:red'>38thADA</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>1237824952113303552</td>
+<td style='color:red'>5thSFAB[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>1734618349</td>
+<td style='color:red'>AyeshaRekhi[bot]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>2785294014</td>
+<td style='color:red'>DESRON_7[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>24112747</td>
+<td style='color:red'>INDOPACOM[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>102722975</td>
+<td style='color:red'>SurfaceWarriors[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>25930421</td>
+<td style='color:red'>US7thFleet[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>829130191532220416</td>
+<td style='color:red'>USARJ_PAO[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>92611744</td>
+<td style='color:red'>USARPAC[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>82306946</td>
+<td style='color:red'>USEmbassyPrague[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>54885400</td>
+<td style='color:red'>USNavy[+][gov]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>28468549</td>
+<td style='color:red'>USPacificFleet[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>1017578055072604160</td>
+<td style='color:red'>jmsdf_pao_eng[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>26980273</td>
+<td style='color:red'>kozakj</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>491468208</td>
+<td style='color:red'>ACIRAtlanta</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>1445397158400774154</td>
+<td style='color:red'>AnakbayanUK</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>3307687069</td>
+<td style='color:red'>CPA_Cordillera[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>1694120298</td>
+<td style='color:red'>CanCGAtlanta[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>1511704288401059840</td>
+<td style='color:red'>CordiDayMM[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>96750689</td>
+<td style='color:red'>GFC_forests[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>2744294556</td>
+<td style='color:red'>Japan_GSDF[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>3066238416</td>
+<td style='color:red'>MMakalalad[+][bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>1427397671409487886</td>
+<td style='color:red'>MarkMinhNguyen</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>1496277013908553730</td>
+<td style='color:red'>Montibon3Pol</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>1083407707028238342</td>
+<td style='color:red'>NORADCommand[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>18749026</td>
+<td style='color:red'>PACAF[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>2216405453</td>
+<td style='color:red'>PacificMarines[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>1432532274621272066</td>
+<td style='color:red'>PanaghiusaPH[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>1115213444578402304</td>
+<td style='color:red'>PilipinasScm[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>1500244448957149193</td>
+<td style='color:red'>RaptorOne9[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>63689241</td>
+<td style='color:red'>TheKejOfGlory[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:red'>1493823703607832577</td>
+<td style='color:red'>USARJ_PA</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:red'>78489442</td>
+<td style='color:red'>USEmbassyPH[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:red'>81155662</td>
+<td style='color:red'>US_STRATCOM[+]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:red'>1279630596633800706</td>
+<td style='color:red'>anakbayansc</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:red'>461853598</td>
+<td style='color:red'>dzbb[+][*]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:red'>1267345823236411392</td>
+<td style='color:red'>katribu_natl[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:red'>2511882350</td>
+<td style='color:red'>katribuphils[bot]</td>
+<td style='color:red'>0.500</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:red'>1240414825596874752</td>
+<td style='color:red'>smninews</td>
+<td style='color:red'>0.500</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>0.021</td>
+<td>Lower quartile:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>1</td>
+<td>Std.dev:</td>
+<td>0.125</td>
+<td>Median:</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>0</td>
+</tr>
+</table>
+</blockquote>
+<h2>Super Spreaders</h2>
+<blockquote>
+<p>Super Spreaders are users which generate content that is shared often, and hence spread information effectively. This has been computed on the union of all agent interaction networks.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p>Input networks: Agent x Agent - All Communication, Agent x Tweet - Sender</p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='300px'/>
+<col width='80px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Agent ID</th>
+<th>Agent Label</th>
+<th>Value</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>24112747</td>
+<td style='color:red'>INDOPACOM[+]</td>
+<td style='color:red'>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>25930421</td>
+<td style='color:red'>US7thFleet[+]</td>
+<td style='color:red'>0.546</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>1017578055072604160</td>
+<td style='color:red'>jmsdf_pao_eng[+]</td>
+<td style='color:red'>0.526</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>54885400</td>
+<td style='color:red'>USNavy[+][gov]</td>
+<td style='color:red'>0.495</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>2216405453</td>
+<td style='color:red'>PacificMarines[+]</td>
+<td style='color:red'>0.449</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>10126672</td>
+<td style='color:red'>USMC[+][gov]</td>
+<td style='color:red'>0.308</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>1122760625283670016</td>
+<td style='color:red'>3d_Marine_Div[+]</td>
+<td style='color:red'>0.301</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>1511704288401059840</td>
+<td style='color:red'>CordiDayMM[bot]</td>
+<td style='color:red'>0.292</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>92611744</td>
+<td style='color:red'>USARPAC[+]</td>
+<td style='color:red'>0.255</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>3837500787</td>
+<td style='color:red'>IPDefenseForum[bot]</td>
+<td style='color:red'>0.250</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>28468549</td>
+<td style='color:red'>USPacificFleet[+]</td>
+<td style='color:red'>0.246</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>18749026</td>
+<td style='color:red'>PACAF[+]</td>
+<td style='color:red'>0.239</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>1350150750966603777</td>
+<td style='color:red'>SecBlinken</td>
+<td style='color:red'>0.191</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>81155662</td>
+<td style='color:red'>US_STRATCOM[+]</td>
+<td style='color:red'>0.182</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>66369181</td>
+<td style='color:red'>DeptofDefense[+][gov]</td>
+<td style='color:red'>0.176</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>93471126</td>
+<td style='color:red'>usembassytokyo[+]</td>
+<td style='color:red'>0.166</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>1269979163726938114</td>
+<td style='color:red'>Fernand39170590[bot]</td>
+<td style='color:red'>0.163</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>1338994562090602497</td>
+<td style='color:red'>SecDef[+]</td>
+<td style='color:red'>0.162</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>389950297</td>
+<td style='color:red'>wadakashiho[bot]</td>
+<td style='color:red'>0.157</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>1156734634257817600</td>
+<td style='color:red'>38thADA</td>
+<td style='color:red'>0.154</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>8775672</td>
+<td style='color:red'>USArmy[gov]</td>
+<td style='color:red'>0.149</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>829130191532220416</td>
+<td style='color:red'>USARJ_PAO[+]</td>
+<td style='color:red'>0.148</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>2744294556</td>
+<td style='color:red'>Japan_GSDF[+]</td>
+<td style='color:red'>0.144</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>4068016160</td>
+<td style='color:red'>tni_ad[+]</td>
+<td style='color:red'>0.142</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>63689241</td>
+<td style='color:red'>TheKejOfGlory[bot]</td>
+<td style='color:red'>0.139</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>227557590</td>
+<td style='color:red'>yourphilarmy</td>
+<td style='color:red'>0.139</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>3114693488</td>
+<td style='color:red'>Turgut_Guliyev[bot]</td>
+<td style='color:red'>0.139</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>1115213444578402304</td>
+<td style='color:red'>PilipinasScm[bot]</td>
+<td style='color:red'>0.138</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>102722975</td>
+<td style='color:red'>SurfaceWarriors[+]</td>
+<td style='color:red'>0.138</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>2511882350</td>
+<td style='color:red'>katribuphils[bot]</td>
+<td style='color:red'>0.136</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>265814534</td>
+<td style='color:red'>JGSDF_pr</td>
+<td style='color:red'>0.133</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:red'>923807628240723968</td>
+<td style='color:red'>JohnsonThongLP[bot]</td>
+<td style='color:red'>0.133</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:red'>1124877633206931456</td>
+<td style='color:red'>woMfbJKqIvydpRP[bot]</td>
+<td style='color:red'>0.133</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:red'>954388280656633856</td>
+<td style='color:red'>3rdmaw</td>
+<td style='color:red'>0.130</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:red'>2785294014</td>
+<td style='color:red'>DESRON_7[+]</td>
+<td style='color:red'>0.130</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:red'>82306946</td>
+<td style='color:red'>USEmbassyPrague[+]</td>
+<td style='color:red'>0.128</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:red'>827343025470738433</td>
+<td style='color:red'>1stMAW_Marines[+]</td>
+<td style='color:red'>0.127</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:red'>1237824952113303552</td>
+<td style='color:red'>5thSFAB[+]</td>
+<td style='color:red'>0.127</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:red'>16565260</td>
+<td style='color:red'>flynavy</td>
+<td style='color:red'>0.125</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:red'>1432532274621272066</td>
+<td style='color:red'>PanaghiusaPH[bot]</td>
+<td style='color:red'>0.120</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:red'>78489442</td>
+<td style='color:red'>USEmbassyPH[+]</td>
+<td style='color:red'>0.120</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:red'>1734618349</td>
+<td style='color:red'>AyeshaRekhi[bot]</td>
+<td style='color:red'>0.115</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:red'>26980273</td>
+<td style='color:red'>kozakj</td>
+<td style='color:red'>0.115</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:red'>1086159045604577280</td>
+<td style='color:red'>sondravet22[bot]</td>
+<td style='color:red'>0.114</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:red'>1172411775934849029</td>
+<td style='color:red'>JASDF_PAO_ENG[+]</td>
+<td style='color:red'>0.113</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:red'>461853598</td>
+<td style='color:red'>dzbb[+][*]</td>
+<td style='color:red'>0.110</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:red'>1004722948043755521</td>
+<td style='color:red'>SiakNiKR[bot]</td>
+<td style='color:red'>0.108</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:red'>1162944823457792003</td>
+<td style='color:red'>1JZGTE2000[bot]</td>
+<td style='color:red'>0.102</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:red'>1337040795086499841</td>
+<td style='color:red'>rebelysyon</td>
+<td style='color:red'>0.102</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:red'>2952411097</td>
+<td style='color:red'>yasuhito_0722[bot]</td>
+<td style='color:red'>0.102</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:red'>201601822</td>
+<td style='color:red'>TeamAFP</td>
+<td style='color:red'>0.101</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:red'>3066238416</td>
+<td style='color:red'>MMakalalad[+][bot]</td>
+<td style='color:red'>0.098</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:red'>3307687069</td>
+<td style='color:red'>CPA_Cordillera[bot]</td>
+<td style='color:red'>0.092</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:red'>441540997</td>
+<td style='color:red'>USAmbPH[+]</td>
+<td style='color:red'>0.091</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:red'>1508751607823237125</td>
+<td style='color:red'>SanjuSa46005906[bot]</td>
+<td style='color:red'>0.090</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:red'>951720519203635201</td>
+<td style='color:red'>takderkordi[bot]</td>
+<td style='color:red'>0.086</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:red'>754923996</td>
+<td style='color:red'>Philippine_Navy[+]</td>
+<td style='color:red'>0.084</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:red'>1287435194316677121</td>
+<td style='color:red'>ASsuuna1[bot]</td>
+<td style='color:red'>0.084</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:red'>1448413205538148357</td>
+<td style='color:red'>AndyMcCoy4real[bot]</td>
+<td style='color:red'>0.084</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:red'>1267345823236411392</td>
+<td style='color:red'>katribu_natl[bot]</td>
+<td style='color:red'>0.083</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:red'>1176545268415619072</td>
+<td style='color:red'>agbinnadangtayo[bot]</td>
+<td style='color:red'>0.081</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:red'>1496277013908553730</td>
+<td style='color:red'>Montibon3Pol</td>
+<td style='color:red'>0.081</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:red'>19611483</td>
+<td style='color:red'>usairforce[*][gov]</td>
+<td style='color:red'>0.080</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:red'>1427397671409487886</td>
+<td style='color:red'>MarkMinhNguyen</td>
+<td style='color:red'>0.079</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:red'>1500244448957149193</td>
+<td style='color:red'>RaptorOne9[bot]</td>
+<td style='color:red'>0.079</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:red'>1279630596633800706</td>
+<td style='color:red'>anakbayansc</td>
+<td style='color:red'>0.079</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:red'>1445397158400774154</td>
+<td style='color:red'>AnakbayanUK</td>
+<td style='color:red'>0.079</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:red'>1415568543970627584</td>
+<td style='color:red'>ClenKell[bot]</td>
+<td style='color:red'>0.078</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:red'>2308345490</td>
+<td style='color:red'>JANET_redstar[bot]</td>
+<td style='color:red'>0.078</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:red'>1331181553834070017</td>
+<td style='color:red'>Koronuru[bot]</td>
+<td style='color:red'>0.078</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:red'>378280914</td>
+<td style='color:red'>StriebRoman[bot]</td>
+<td style='color:red'>0.078</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:red'>2363702751</td>
+<td style='color:red'>jhop4749[bot]</td>
+<td style='color:red'>0.078</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:red'>1163719671117303808</td>
+<td style='color:red'>KatsuhikoTsuda[bot]</td>
+<td style='color:red'>0.072</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:red'>2493948451</td>
+<td style='color:red'>PhilAirForce</td>
+<td style='color:red'>0.070</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:green'>1240414825596874752</td>
+<td style='color:green'>smninews</td>
+<td style='color:green'>0.069</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:green'>3252386060</td>
+<td style='color:green'>IIIMEF</td>
+<td style='color:green'>0.068</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:green'>83795099</td>
+<td style='color:green'>NATO[gov]</td>
+<td style='color:green'>0.066</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:green'>1449085848444493825</td>
+<td style='color:green'>BurrisSuarez[bot]</td>
+<td style='color:green'>0.066</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:green'>1416453858566578185</td>
+<td style='color:green'>MChelseagirl[bot]</td>
+<td style='color:green'>0.066</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:green'>579561567</td>
+<td style='color:green'>Xezdamsel37[bot]</td>
+<td style='color:green'>0.066</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:green'>422577072</td>
+<td style='color:green'>aevum2020[bot]</td>
+<td style='color:green'>0.066</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:green'>96750689</td>
+<td style='color:green'>GFC_forests[bot]</td>
+<td style='color:green'>0.065</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:green'>115684356</td>
+<td style='color:green'>AFGlobalStrike</td>
+<td style='color:green'>0.064</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:green'>1083407707028238342</td>
+<td style='color:green'>NORADCommand[+]</td>
+<td style='color:green'>0.064</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:green'>540532607</td>
+<td style='color:green'>DZAR1026</td>
+<td style='color:green'>0.064</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:green'>268016211</td>
+<td style='color:green'>8thTSC[+]</td>
+<td style='color:green'>0.061</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:green'>1493823703607832577</td>
+<td style='color:green'>USARJ_PA</td>
+<td style='color:green'>0.060</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:green'>1170784150468476929</td>
+<td style='color:green'>RobertW81555222[bot]</td>
+<td style='color:green'>0.060</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:green'>1241977585673752576</td>
+<td style='color:green'>provider808[bot]</td>
+<td style='color:green'>0.060</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:green'>491468208</td>
+<td style='color:green'>ACIRAtlanta</td>
+<td style='color:green'>0.057</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:green'>119407077</td>
+<td style='color:green'>HQUSAFEAFAF[+]</td>
+<td style='color:green'>0.056</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:green'>338712174</td>
+<td style='color:green'>TeamBarksdale</td>
+<td style='color:green'>0.056</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:green'>18144581</td>
+<td style='color:green'>USNorthernCmd[+]</td>
+<td style='color:green'>0.056</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:green'>1694120298</td>
+<td style='color:green'>CanCGAtlanta[+]</td>
+<td style='color:green'>0.056</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:green'>1486097077</td>
+<td style='color:green'>JorgePonceCaraz[bot]</td>
+<td style='color:green'>0.054</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:green'>1021597353910796294</td>
+<td style='color:green'>defense_sloot</td>
+<td style='color:green'>0.054</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:green'>19805682</td>
+<td style='color:green'>zachvat[bot]</td>
+<td style='color:green'>0.054</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:green'>298244970</td>
+<td style='color:green'>zero2152[bot]</td>
+<td style='color:green'>0.054</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:green'>970153086982307840</td>
+<td style='color:green'>philtfip[bot]</td>
+<td style='color:green'>0.053</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:green'>1448368746041647108</td>
+<td style='color:green'>CounselorDOS</td>
+<td style='color:green'>0.052</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>0.019</td>
+<td>Lower quartile:</td>
+<td>0.005</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>1</td>
+<td>Std.dev:</td>
+<td>0.051</td>
+<td>Median:</td>
+<td>0.005</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>0.011</td>
+</tr>
+</table>
+</blockquote>
+<h2>Agents Interacting the Most (total degree centrality)</h2>
+<blockquote>
+<p>The total number of other agents with which each agent interacts.</p>
+<p class='measures-value-classification'>If the node of interest has a higher than normal value (greater than 1 standard deviation(s) above the mean) the row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the node is within 1 standard deviation of the mean. Finally, the row is colored <span style='color:blue'>blue</span> if the node has a lower than normal value (less than one standard deviation(s) below the mean).</p>
+<p>Node name markers: [+] Verified, [*] News Agency, [gov] Government Actor, [bot] BOT</p>
+<p>Input networks: Agent x Agent - All Communication</p>
+<table class='measures-ranked'>
+<col width='40px'/>
+<col width='300px'/>
+<col width='300px'/>
+<col width='80px'/>
+<col width='80px'/>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Agent ID</th>
+<th>Agent Label</th>
+<th>Value</th>
+<th>Unscaled</th>
+</tr>
+</thead>
+<tr>
+<td>1</td>
+<td style='color:red'>24112747</td>
+<td style='color:red'>INDOPACOM[+]</td>
+<td style='color:red'>0.188</td>
+<td style='color:red'>473</td>
+</tr>
+<tr>
+<td>2</td>
+<td style='color:red'>2216405453</td>
+<td style='color:red'>PacificMarines[+]</td>
+<td style='color:red'>0.081</td>
+<td style='color:red'>203</td>
+</tr>
+<tr>
+<td>3</td>
+<td style='color:red'>54885400</td>
+<td style='color:red'>USNavy[+][gov]</td>
+<td style='color:red'>0.076</td>
+<td style='color:red'>192</td>
+</tr>
+<tr>
+<td>4</td>
+<td style='color:red'>25930421</td>
+<td style='color:red'>US7thFleet[+]</td>
+<td style='color:red'>0.073</td>
+<td style='color:red'>183</td>
+</tr>
+<tr>
+<td>5</td>
+<td style='color:red'>18749026</td>
+<td style='color:red'>PACAF[+]</td>
+<td style='color:red'>0.063</td>
+<td style='color:red'>159</td>
+</tr>
+<tr>
+<td>6</td>
+<td style='color:red'>3837500787</td>
+<td style='color:red'>IPDefenseForum[bot]</td>
+<td style='color:red'>0.056</td>
+<td style='color:red'>140</td>
+</tr>
+<tr>
+<td>7</td>
+<td style='color:red'>10126672</td>
+<td style='color:red'>USMC[+][gov]</td>
+<td style='color:red'>0.054</td>
+<td style='color:red'>137</td>
+</tr>
+<tr>
+<td>8</td>
+<td style='color:red'>1350150750966603777</td>
+<td style='color:red'>SecBlinken</td>
+<td style='color:red'>0.051</td>
+<td style='color:red'>129</td>
+</tr>
+<tr>
+<td>9</td>
+<td style='color:red'>1338994562090602497</td>
+<td style='color:red'>SecDef[+]</td>
+<td style='color:red'>0.050</td>
+<td style='color:red'>127</td>
+</tr>
+<tr>
+<td>10</td>
+<td style='color:red'>1017578055072604160</td>
+<td style='color:red'>jmsdf_pao_eng[+]</td>
+<td style='color:red'>0.048</td>
+<td style='color:red'>122</td>
+</tr>
+<tr>
+<td>11</td>
+<td style='color:red'>92611744</td>
+<td style='color:red'>USARPAC[+]</td>
+<td style='color:red'>0.036</td>
+<td style='color:red'>91</td>
+</tr>
+<tr>
+<td>12</td>
+<td style='color:red'>1122760625283670016</td>
+<td style='color:red'>3d_Marine_Div[+]</td>
+<td style='color:red'>0.036</td>
+<td style='color:red'>90</td>
+</tr>
+<tr>
+<td>13</td>
+<td style='color:red'>28468549</td>
+<td style='color:red'>USPacificFleet[+]</td>
+<td style='color:red'>0.032</td>
+<td style='color:red'>80</td>
+</tr>
+<tr>
+<td>14</td>
+<td style='color:red'>81155662</td>
+<td style='color:red'>US_STRATCOM[+]</td>
+<td style='color:red'>0.027</td>
+<td style='color:red'>67</td>
+</tr>
+<tr>
+<td>15</td>
+<td style='color:red'>66369181</td>
+<td style='color:red'>DeptofDefense[+][gov]</td>
+<td style='color:red'>0.023</td>
+<td style='color:red'>57</td>
+</tr>
+<tr>
+<td>16</td>
+<td style='color:red'>827343025470738433</td>
+<td style='color:red'>1stMAW_Marines[+]</td>
+<td style='color:red'>0.019</td>
+<td style='color:red'>49</td>
+</tr>
+<tr>
+<td>17</td>
+<td style='color:red'>93471126</td>
+<td style='color:red'>usembassytokyo[+]</td>
+<td style='color:red'>0.019</td>
+<td style='color:red'>47</td>
+</tr>
+<tr>
+<td>18</td>
+<td style='color:red'>102722975</td>
+<td style='color:red'>SurfaceWarriors[+]</td>
+<td style='color:red'>0.018</td>
+<td style='color:red'>46</td>
+</tr>
+<tr>
+<td>19</td>
+<td style='color:red'>2785294014</td>
+<td style='color:red'>DESRON_7[+]</td>
+<td style='color:red'>0.018</td>
+<td style='color:red'>45</td>
+</tr>
+<tr>
+<td>20</td>
+<td style='color:red'>16565260</td>
+<td style='color:red'>flynavy</td>
+<td style='color:red'>0.016</td>
+<td style='color:red'>41</td>
+</tr>
+<tr>
+<td>21</td>
+<td style='color:red'>829130191532220416</td>
+<td style='color:red'>USARJ_PAO[+]</td>
+<td style='color:red'>0.016</td>
+<td style='color:red'>40</td>
+</tr>
+<tr>
+<td>22</td>
+<td style='color:red'>2744294556</td>
+<td style='color:red'>Japan_GSDF[+]</td>
+<td style='color:red'>0.015</td>
+<td style='color:red'>38</td>
+</tr>
+<tr>
+<td>23</td>
+<td style='color:red'>265814534</td>
+<td style='color:red'>JGSDF_pr</td>
+<td style='color:red'>0.015</td>
+<td style='color:red'>37</td>
+</tr>
+<tr>
+<td>24</td>
+<td style='color:red'>8775672</td>
+<td style='color:red'>USArmy[gov]</td>
+<td style='color:red'>0.015</td>
+<td style='color:red'>37</td>
+</tr>
+<tr>
+<td>25</td>
+<td style='color:red'>1156734634257817600</td>
+<td style='color:red'>38thADA</td>
+<td style='color:red'>0.014</td>
+<td style='color:red'>36</td>
+</tr>
+<tr>
+<td>26</td>
+<td style='color:red'>227557590</td>
+<td style='color:red'>yourphilarmy</td>
+<td style='color:red'>0.013</td>
+<td style='color:red'>32</td>
+</tr>
+<tr>
+<td>27</td>
+<td style='color:red'>201601822</td>
+<td style='color:red'>TeamAFP</td>
+<td style='color:red'>0.012</td>
+<td style='color:red'>29</td>
+</tr>
+<tr>
+<td>28</td>
+<td style='color:red'>4068016160</td>
+<td style='color:red'>tni_ad[+]</td>
+<td style='color:red'>0.012</td>
+<td style='color:red'>29</td>
+</tr>
+<tr>
+<td>29</td>
+<td style='color:red'>19611483</td>
+<td style='color:red'>usairforce[*][gov]</td>
+<td style='color:red'>0.010</td>
+<td style='color:red'>26</td>
+</tr>
+<tr>
+<td>30</td>
+<td style='color:red'>3252386060</td>
+<td style='color:red'>IIIMEF</td>
+<td style='color:red'>0.010</td>
+<td style='color:red'>25</td>
+</tr>
+<tr>
+<td>31</td>
+<td style='color:red'>1172411775934849029</td>
+<td style='color:red'>JASDF_PAO_ENG[+]</td>
+<td style='color:red'>0.010</td>
+<td style='color:red'>25</td>
+</tr>
+<tr>
+<td>32</td>
+<td style='color:green'>954388280656633856</td>
+<td style='color:green'>3rdmaw</td>
+<td style='color:green'>0.010</td>
+<td style='color:green'>24</td>
+</tr>
+<tr>
+<td>33</td>
+<td style='color:green'>83795099</td>
+<td style='color:green'>NATO[gov]</td>
+<td style='color:green'>0.010</td>
+<td style='color:green'>24</td>
+</tr>
+<tr>
+<td>34</td>
+<td style='color:green'>1237824952113303552</td>
+<td style='color:green'>5thSFAB[+]</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>23</td>
+</tr>
+<tr>
+<td>35</td>
+<td style='color:green'>115684356</td>
+<td style='color:green'>AFGlobalStrike</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>23</td>
+</tr>
+<tr>
+<td>36</td>
+<td style='color:green'>1448413205538148357</td>
+<td style='color:green'>AndyMcCoy4real[bot]</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>23</td>
+</tr>
+<tr>
+<td>37</td>
+<td style='color:green'>389950297</td>
+<td style='color:green'>wadakashiho[bot]</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>23</td>
+</tr>
+<tr>
+<td>38</td>
+<td style='color:green'>3114693488</td>
+<td style='color:green'>Turgut_Guliyev[bot]</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>22</td>
+</tr>
+<tr>
+<td>39</td>
+<td style='color:green'>1511704288401059840</td>
+<td style='color:green'>CordiDayMM[bot]</td>
+<td style='color:green'>0.008</td>
+<td style='color:green'>21</td>
+</tr>
+<tr>
+<td>40</td>
+<td style='color:green'>1269979163726938114</td>
+<td style='color:green'>Fernand39170590[bot]</td>
+<td style='color:green'>0.008</td>
+<td style='color:green'>21</td>
+</tr>
+<tr>
+<td>41</td>
+<td style='color:green'>1162944823457792003</td>
+<td style='color:green'>1JZGTE2000[bot]</td>
+<td style='color:green'>0.008</td>
+<td style='color:green'>19</td>
+</tr>
+<tr>
+<td>42</td>
+<td style='color:green'>2952411097</td>
+<td style='color:green'>yasuhito_0722[bot]</td>
+<td style='color:green'>0.008</td>
+<td style='color:green'>19</td>
+</tr>
+<tr>
+<td>43</td>
+<td style='color:green'>1124877633206931456</td>
+<td style='color:green'>woMfbJKqIvydpRP[bot]</td>
+<td style='color:green'>0.007</td>
+<td style='color:green'>18</td>
+</tr>
+<tr>
+<td>44</td>
+<td style='color:green'>3307687069</td>
+<td style='color:green'>CPA_Cordillera[bot]</td>
+<td style='color:green'>0.007</td>
+<td style='color:green'>17</td>
+</tr>
+<tr>
+<td>45</td>
+<td style='color:green'>78489442</td>
+<td style='color:green'>USEmbassyPH[+]</td>
+<td style='color:green'>0.007</td>
+<td style='color:green'>17</td>
+</tr>
+<tr>
+<td>46</td>
+<td style='color:green'>1416453858566578185</td>
+<td style='color:green'>MChelseagirl[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>16</td>
+</tr>
+<tr>
+<td>47</td>
+<td style='color:green'>1449085848444493825</td>
+<td style='color:green'>BurrisSuarez[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>15</td>
+</tr>
+<tr>
+<td>48</td>
+<td style='color:green'>1287435194316677121</td>
+<td style='color:green'>ASsuuna1[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>14</td>
+</tr>
+<tr>
+<td>49</td>
+<td style='color:green'>1447182320616812544</td>
+<td style='color:green'>AttackCupcake[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>14</td>
+</tr>
+<tr>
+<td>50</td>
+<td style='color:green'>923807628240723968</td>
+<td style='color:green'>JohnsonThongLP[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>14</td>
+</tr>
+<tr>
+<td>51</td>
+<td style='color:green'>1508751607823237125</td>
+<td style='color:green'>SanjuSa46005906[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>14</td>
+</tr>
+<tr>
+<td>52</td>
+<td style='color:green'>1086159045604577280</td>
+<td style='color:green'>sondravet22[bot]</td>
+<td style='color:green'>0.006</td>
+<td style='color:green'>14</td>
+</tr>
+<tr>
+<td>53</td>
+<td style='color:green'>754923996</td>
+<td style='color:green'>Philippine_Navy[+]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>13</td>
+</tr>
+<tr>
+<td>54</td>
+<td style='color:green'>262425295</td>
+<td style='color:green'>cucojose[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>13</td>
+</tr>
+<tr>
+<td>55</td>
+<td style='color:green'>1172106776646279168</td>
+<td style='color:green'>ABranger_wife</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>56</td>
+<td style='color:green'>1415568543970627584</td>
+<td style='color:green'>ClenKell[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>57</td>
+<td style='color:green'>1493820130228195331</td>
+<td style='color:green'>GokhanHidir[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>58</td>
+<td style='color:green'>1331181553834070017</td>
+<td style='color:green'>Koronuru[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>59</td>
+<td style='color:green'>1496277013908553730</td>
+<td style='color:green'>Montibon3Pol</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>60</td>
+<td style='color:green'>378280914</td>
+<td style='color:green'>StriebRoman[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>61</td>
+<td style='color:green'>3231463644</td>
+<td style='color:green'>f86d_</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>62</td>
+<td style='color:green'>1241977585673752576</td>
+<td style='color:green'>provider808[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>63</td>
+<td style='color:green'>951720519203635201</td>
+<td style='color:green'>takderkordi[bot]</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>12</td>
+</tr>
+<tr>
+<td>64</td>
+<td style='color:green'>2308345490</td>
+<td style='color:green'>JANET_redstar[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>11</td>
+</tr>
+<tr>
+<td>65</td>
+<td style='color:green'>1239764287083515907</td>
+<td style='color:green'>Kiyomi_InJapan</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>11</td>
+</tr>
+<tr>
+<td>66</td>
+<td style='color:green'>2188654916</td>
+<td style='color:green'>defined_un_sort[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>11</td>
+</tr>
+<tr>
+<td>67</td>
+<td style='color:green'>1240414825596874752</td>
+<td style='color:green'>smninews</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>11</td>
+</tr>
+<tr>
+<td>68</td>
+<td style='color:green'>1461826921206059020</td>
+<td style='color:green'>steps_ka[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>11</td>
+</tr>
+<tr>
+<td>69</td>
+<td style='color:green'>1258464081041858567</td>
+<td style='color:green'>Glenda37241419[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>70</td>
+<td style='color:green'>1486097077</td>
+<td style='color:green'>JorgePonceCaraz[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>71</td>
+<td style='color:green'>1163719671117303808</td>
+<td style='color:green'>KatsuhikoTsuda[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>72</td>
+<td style='color:green'>3197436926</td>
+<td style='color:green'>Nori_cb[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>73</td>
+<td style='color:green'>1170784150468476929</td>
+<td style='color:green'>RobertW81555222[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>74</td>
+<td style='color:green'>63689241</td>
+<td style='color:green'>TheKejOfGlory[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>75</td>
+<td style='color:green'>579561567</td>
+<td style='color:green'>Xezdamsel37[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>76</td>
+<td style='color:green'>1337040795086499841</td>
+<td style='color:green'>rebelysyon</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>10</td>
+</tr>
+<tr>
+<td>77</td>
+<td style='color:green'>406250308</td>
+<td style='color:green'>2reconb_laxer</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>78</td>
+<td style='color:green'>858042162860183552</td>
+<td style='color:green'>AliciaLisaGrag2[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>79</td>
+<td style='color:green'>883172101309386752</td>
+<td style='color:green'>AnakbayanUST[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>80</td>
+<td style='color:green'>1497044033583345667</td>
+<td style='color:green'>Catalyst220224[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>81</td>
+<td style='color:green'>1444565812086411269</td>
+<td style='color:green'>CxVolGg0QEKMVfI[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>82</td>
+<td style='color:green'>1425636844205641733</td>
+<td style='color:green'>MVanhalesing[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>83</td>
+<td style='color:green'>897099537751343104</td>
+<td style='color:green'>Martinacuna1965[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>84</td>
+<td style='color:green'>1432532274621272066</td>
+<td style='color:green'>PanaghiusaPH[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>85</td>
+<td style='color:green'>2493948451</td>
+<td style='color:green'>PhilAirForce</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>86</td>
+<td style='color:green'>1115213444578402304</td>
+<td style='color:green'>PilipinasScm[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>87</td>
+<td style='color:green'>1410037232937803777</td>
+<td style='color:green'>USIRCOnline</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>88</td>
+<td style='color:green'>1267345823236411392</td>
+<td style='color:green'>katribu_natl[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>89</td>
+<td style='color:green'>2511882350</td>
+<td style='color:green'>katribuphils[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>90</td>
+<td style='color:green'>1945463636</td>
+<td style='color:green'>pitukpongpreech[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>91</td>
+<td style='color:green'>298244970</td>
+<td style='color:green'>zero2152[bot]</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>9</td>
+</tr>
+<tr>
+<td>92</td>
+<td style='color:green'>1170689281142272001</td>
+<td style='color:green'>BL1ND3RS0FF[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>93</td>
+<td style='color:green'>20422178</td>
+<td style='color:green'>Bizarro001[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>94</td>
+<td style='color:green'>59872846</td>
+<td style='color:green'>ClubCabeza[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>95</td>
+<td style='color:green'>540532607</td>
+<td style='color:green'>DZAR1026</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>96</td>
+<td style='color:green'>1331769324</td>
+<td style='color:green'>DonnaEBecton[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>97</td>
+<td style='color:green'>1194720234017558528</td>
+<td style='color:green'>Heathermarymag[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>98</td>
+<td style='color:green'>730178982872780800</td>
+<td style='color:green'>JediHaloMan21[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>99</td>
+<td style='color:green'>1458746884491673601</td>
+<td style='color:green'>JuliWo16515037[bot]</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+<tr>
+<td>100</td>
+<td style='color:green'>116056117</td>
+<td style='color:green'>MAC__V</td>
+<td style='color:green'>0.003</td>
+<td style='color:green'>8</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>0.002</td>
+<td>Lower quartile:</td>
+<td>3.973e-04</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>0.188</td>
+<td>Std.dev:</td>
+<td>0.008</td>
+<td>Median:</td>
+<td>7.946e-04</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>0.001</td>
+</tr>
+</table>
+<table class='measures-context'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='200px'/>
+<col width='100px'/>
+<tr>
+<th colspan='6'>Unscaled value statistics</th>
+</tr>
+<tr>
+<td>Min:</td>
+<td>0</td>
+<td>Mean:</td>
+<td>4.965</td>
+<td>Lower quartile:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Max:</td>
+<td>473</td>
+<td>Std.dev:</td>
+<td>19.714</td>
+<td>Median:</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Upper quartile:</td>
+<td>3</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p><a href="BEND & Community Assessment_All Actors.html">Return to previous page</a></p>
+</html>
